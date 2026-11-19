@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBER SENTINELS — Your First Response Against Cybercrime</title>
+  <meta name="description" content="Cyber Sentinels is a civic-tech public awareness initiative helping citizens understand digital threats, craft formal complaints, and react effectively against cybercrime.">
+  
+  <!-- Typography: Newsreader (Editorial Serif), Inter (Clean Sans-Serif), JetBrains Mono (Code/Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo / Wordmark with Custom Shield Insignia -->
+      <a href="#home" class="brand" aria-label="Cyber Sentinels Home">
+        <div class="brand-insignia" aria-hidden="true">
+          <svg class="logo-shield-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Shield Geometry -->
+            <path d="M22 3 L37 8 V19 C37 28.5 22 39 22 39 C22 39 7 28.5 7 19 V8 L22 3 Z" fill="url(#shieldGrad)" stroke="#C49A83" stroke-width="1.5"/>
+            <!-- Inner Micro Circuit Paths -->
+            <path d="M22 9 V18" stroke="#E8D5D8" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M15 15 H22 H29" stroke="#E8D5D8" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="15" cy="15" r="2" fill="#C49A83"/>
+            <circle cx="29" cy="15" r="2" fill="#C49A83"/>
+            <path d="M18 24 L22 21 L26 24 V29 L22 32 L18 29 Z" fill="#C49A83" stroke="#FFFFFF" stroke-width="0.8"/>
+            <circle cx="22" cy="26.5" r="1.5" fill="#542033"/>
+            <!-- Defs -->
+            <defs>
+              <linearGradient id="shieldGrad" x1="7" y1="3" x2="37" y2="39" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#762F49"/>
+                <stop offset="1" stop-color="#542033"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CYBER SENTINELS</span>
+          <span class="brand-tagline">First Response Initiative</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#threats" class="nav-link">Cyber Threats</a>
+        <a href="awareness.html" class="nav-link">Online Awareness</a>
+        <a href="#response" class="nav-link">Emergency Response</a>
+        <a href="#assistant" class="nav-link">Safety Assistant</a>
+        <a href="#complaint" class="nav-link">Draft Complaint</a>
+        <a href="#checklist" class="nav-link">Evidence Checklist</a>
+        <a href="#resources" class="nav-link">Official Resources</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="emergency-btn" title="Call 1930 or file on official portal">
+          <span class="emergency-pulse" aria-hidden="true"></span>
+          Report Cyber Fraud
+        </a>
+        <button id="mobileMenuToggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION
+         ========================================================================= -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>DIGITAL SAFETY / PUBLIC AWARENESS INITIATIVE</span>
+          </div>
+          <h1 class="hero-title">
+            One wrong click.<br>
+            <em>A lifetime</em> of consequences.
+          </h1>
+          <p class="hero-description">
+            Understand digital threats, respond confidently, and take the right steps when cybercrime strikes. Your decisive guide to defending your assets and identities.
+          </p>
+          <div class="hero-actions">
+            <a href="#threats" class="btn btn-primary">Explore Cyber Threats</a>
+            <a href="#response" class="btn btn-outline">Get Emergency Help</a>
+          </div>
+
+          <!-- Emergency Strip -->
+          <div class="emergency-strip" role="alert">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--burgundy-deep);" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Financial cyber fraud? <strong><a href="tel:1930" style="color: var(--burgundy-deep); text-decoration: underline;">Call 1930 immediately</a></strong> or report at <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">cybercrime.gov.in</a></span>
+          </div>
+        </div>
+
+        <!-- Editorial Visual Composition -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="composition-frame">
+            <div class="composition-badge">CIVIC DEFENSE DOSSIER // VOL. 01</div>
+            
+            <div class="composition-illustration">
+              <!-- Custom Wine-Red & Rose Gold Civic Editorial SVG Composition -->
+              <svg class="shield-graphic" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer decorative coordinate border -->
+                <rect x="15" y="15" width="270" height="210" rx="2" stroke="#E6D9D7" stroke-width="1.5" stroke-dasharray="4 4" />
+                <circle cx="15" cy="15" r="3" fill="#762F49" />
+                <circle cx="285" cy="15" r="3" fill="#762F49" />
+                <circle cx="15" cy="225" r="3" fill="#762F49" />
+                <circle cx="285" cy="225" r="3" fill="#762F49" />
+                
+                <!-- Central Emblem: Shield & Keyhole Geometry -->
+                <path d="M150 40 L215 70 V130 C215 170 150 200 150 200 C150 200 85 170 85 130 V70 L150 40 Z" fill="#FBF5F6" stroke="#762F49" stroke-width="2" />
+                <path d="M150 65 L195 86 V128 C195 156 150 178 150 178 C150 178 105 156 105 128 V86 L150 65 Z" fill="#FFFCFA" stroke="#E6D9D7" stroke-width="1.5" />
+                
+                <!-- Center Balance Lock Icon (Wine Red & Rose Gold Accent) -->
+                <circle cx="150" cy="115" r="14" fill="#542033" />
+                <path d="M150 120 V140" stroke="#C49A83" stroke-width="3" stroke-linecap="round" />
+                
+                <!-- Graphic Crosshairs & Data Line -->
+                <line x1="50" y1="120" x2="80" y2="120" stroke="#C49A83" stroke-width="1.5" />
+                <line x1="220" y1="120" x2="250" y2="120" stroke="#C49A83" stroke-width="1.5" />
+              </svg>
+            </div>
+
+            <div class="composition-stats">
+              <div class="stat-item">
+                <span class="stat-number">1930</span>
+                <span class="stat-label">National Financial Fraud Helpline</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">&lt; 2 Hrs</span>
+                <span class="stat-label">Golden Window to Freeze Accounts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. THREAT AWARENESS SECTION
+         ========================================================================= -->
+    <section id="threats" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">01 //</span>
+            <span>MODERN ATTACK VECTORS</span>
+          </div>
+          <h2 class="section-title">Deconstructing common digital traps.</h2>
+          <p class="section-subtitle">
+            Cybercriminals rely on urgency, authority deception, and human psychology far more than sophisticated malware. Learn their methods before encountering them.
+          </p>
+        </header>
+
+        <div class="threats-grid">
+          <!-- Card 1: UPI & QR Code Scams -->
+          <article class="threat-card">
+            <div class="threat-card-top">
+              <div class="threat-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </div>
+              <span class="threat-card-number">CASE 01</span>
+            </div>
+            <h3 class="threat-card-title">UPI &amp; QR Code Scams</h3>
+            <p class="threat-card-text">
+              Scammers list items on marketplaces (OLX, Facebook) or offer refunds, sending a QR code with the claim: <em>"Scan this QR code to receive your advance payment."</em>
+            </p>
+            <div class="threat-section-block">
+              <div class="threat-block-label label-warning">
+                <span>⚠️ Warning Signs</span>
+              </div>
+              <ul class="threat-warning-list">
+                <li>Asking you to enter your UPI PIN to "receive" funds</li>
+                <li>Fake payment screenshot showing money debited from buyer</li>
+              </ul>
+              <div class="threat-block-label label-prevention">
+                <span>🛡️ Prevention Rule</span>
+              </div>
+              <div class="threat-prevention-tip">
+                <strong>Golden Rule:</strong> UPI PIN is ONLY entered when deducting money from your account, never to receive money.
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Digital Arrest Scams -->
+          <article class="threat-card">
+            <div class="threat-card-top">
+              <div class="threat-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="threat-card-number">CASE 02</span>
+            </div>
+            <h3 class="threat-card-title">Digital Arrest Scams</h3>
+            <p class="threat-card-text">
+              Victims receive video calls from individuals in police uniforms claiming a parcel with narcotics or money laundering has been intercepted under their Aadhaar.
+            </p>
+            <div class="threat-section-block">
+              <div class="threat-block-label label-warning">
+                <span>⚠️ Warning Signs</span>
+              </div>
+              <ul class="threat-warning-list">
+                <li>Threat of "Digital Arrest" over Skype or WhatsApp call</li>
+                <li>Demand to transfer money into an "escrow account" for verification</li>
+              </ul>
+              <div class="threat-block-label label-prevention">
+                <span>🛡️ Prevention Rule</span>
+              </div>
+              <div class="threat-prevention-tip">
+                <strong>Legal Fact:</strong> "Digital Arrest" does not exist under Indian law. Law enforcement never conducts trials via video calls.
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: WhatsApp Account Hijacking -->
+          <article class="threat-card">
+            <div class="threat-card-top">
+              <div class="threat-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <span class="threat-card-number">CASE 03</span>
+            </div>
+            <h3 class="threat-card-title">WhatsApp Account Hijacking</h3>
+            <p class="threat-card-text">
+              An acquaintance or relative asks you: <em>"I accidentally sent an OTP to your phone, please forward it to me."</em> Forwarding it immediately surrenders your WhatsApp account.
+            </p>
+            <div class="threat-section-block">
+              <div class="threat-block-label label-warning">
+                <span>⚠️ Warning Signs</span>
+              </div>
+              <ul class="threat-warning-list">
+                <li>Sudden emergency messages asking for 6-digit codes</li>
+                <li>Unknown phone login prompt appearing on your screen</li>
+              </ul>
+              <div class="threat-block-label label-prevention">
+                <span>🛡️ Prevention Rule</span>
+              </div>
+              <div class="threat-prevention-tip">
+                <strong>Action:</strong> Never share verification codes. Immediately enable <strong>Two-Step Verification</strong> in WhatsApp settings.
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Screen Sharing & Remote Access Scams -->
+          <article class="threat-card">
+            <div class="threat-card-top">
+              <div class="threat-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="threat-card-number">CASE 04</span>
+            </div>
+            <h3 class="threat-card-title">Remote Access &amp; Screen Sharing</h3>
+            <p class="threat-card-text">
+              Posing as customer care or courier support, scammers ask you to install apps like AnyDesk, TeamViewer, or RustDesk to "help verify your payment" or "complete KYC".
+            </p>
+            <div class="threat-section-block">
+              <div class="threat-block-label label-warning">
+                <span>⚠️ Warning Signs</span>
+              </div>
+              <ul class="threat-warning-list">
+                <li>Caller requesting a 9-digit code from AnyDesk/QuickSupport</li>
+                <li>Instruction to open banking app while on the call</li>
+              </ul>
+              <div class="threat-block-label label-prevention">
+                <span>🛡️ Prevention Rule</span>
+              </div>
+              <div class="threat-prevention-tip">
+                <strong>Strict Defense:</strong> Legitimate customer service never demands screen-sharing apps to process refunds or KYC.
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Fake Electricity Bill Scams -->
+          <article class="threat-card">
+            <div class="threat-card-top">
+              <div class="threat-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <span class="threat-card-number">CASE 05</span>
+            </div>
+            <h3 class="threat-card-title">Fake Electricity Bill Scams</h3>
+            <p class="threat-card-text">
+              An urgent SMS arrives: <em>"Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM due to unpaid bill. Call officer at 98xxxxxxx immediately."</em>
+            </p>
+            <div class="threat-section-block">
+              <div class="threat-block-label label-warning">
+                <span>⚠️ Warning Signs</span>
+              </div>
+              <ul class="threat-warning-list">
+                <li>Sent from personal 10-digit mobile numbers, not official sender IDs</li>
+                <li>Directing you to call a personal phone or install an APK file</li>
+              </ul>
+              <div class="threat-block-label label-prevention">
+                <span>🛡️ Prevention Rule</span>
+              </div>
+              <div class="threat-prevention-tip">
+                <strong>Check First:</strong> Check pending dues exclusively through your official electricity distribution portal or app.
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Phishing & Fake Links -->
+          <article class="threat-card">
+            <div class="threat-card-top">
+              <div class="threat-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </div>
+              <span class="threat-card-number">CASE 06</span>
+            </div>
+            <h3 class="threat-card-title">Phishing &amp; Fake Links</h3>
+            <p class="threat-card-text">
+              Links imitating banks, courier delivery (India Post / BlueDart), or income tax portals sent through SMS/email asking you to update PAN, pay ₹10 fees, or claim prizes.
+            </p>
+            <div class="threat-section-block">
+              <div class="threat-block-label label-warning">
+                <span>⚠️ Warning Signs</span>
+              </div>
+              <ul class="threat-warning-list">
+                <li>Misspelled domain names (e.g., sbi-login-kyc.com, indiapost-track.xyz)</li>
+                <li>Shortened bit.ly or tinyurl links requiring immediate credentials</li>
+              </ul>
+              <div class="threat-block-label label-prevention">
+                <span>🛡️ Prevention Rule</span>
+              </div>
+              <div class="threat-prevention-tip">
+                <strong>Inspect URLs:</strong> Always verify domain endings. Authentic government sites strictly end with <code>.gov.in</code> or <code>.nic.in</code>.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. HOW TO RESPOND SECTION
+         ========================================================================= -->
+    <section id="response" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">02 //</span>
+            <span>CRITICAL PROTOCOL</span>
+          </div>
+          <h2 class="section-title">Emergency response roadmap.</h2>
+          <p class="section-subtitle">
+            If you suspect fraud or an unauthorized transaction has occurred, follow these exact 5 steps in chronological order. Speed is paramount.
+          </p>
+        </header>
+
+        <div class="response-timeline">
+          <!-- Step 1 -->
+          <div class="response-card">
+            <div class="response-step-number" aria-hidden="true">01</div>
+            <div class="response-content">
+              <h3>Immediately Sever All Communication</h3>
+              <p>Hang up the phone call, disconnect video chats, and cease texting the suspected scammer. Do not explain or confront them. If you installed remote software (AnyDesk, TeamViewer), turn off Wi-Fi and mobile data immediately to cut their connection.</p>
+            </div>
+            <span class="response-action-badge">Within Minutes</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="response-card highlight">
+            <div class="response-step-number" aria-hidden="true">02</div>
+            <div class="response-content">
+              <h3>Contact Bank or Payment Provider Instantly</h3>
+              <p>Call your bank's 24/7 emergency fraud helpline or use your mobile banking application to freeze your debit/credit card, block net banking access, and stop UPI services. Request an official reference/complaint ticket number.</p>
+            </div>
+            <span class="response-action-badge">Window: &lt; 1 Hour</span>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="response-card highlight">
+            <div class="response-step-number" aria-hidden="true">03</div>
+            <div class="response-content">
+              <h3>Call 1930 for Financial Cyber Fraud</h3>
+              <p>Dial 1930 (National Cyber Crime Reporting Helpline). State your bank name, account number, transaction UTR number, and time of transaction. Calling within 2 hours enables authorities to trigger inter-bank lien holds on fraudulent recipient accounts.</p>
+            </div>
+            <span class="response-action-badge">Helpline: 1930</span>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="response-card">
+            <div class="response-step-number" aria-hidden="true">04</div>
+            <div class="response-content">
+              <h3>Register Official FIR on cybercrime.gov.in</h3>
+              <p>Log on to the National Cyber Crime Reporting Portal (<a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">cybercrime.gov.in</a>). Lodge a formal complaint under "Report Cyber Fraud". Keep a digital copy of your Acknowledgement Slip for bank follow-ups.</p>
+            </div>
+            <span class="response-action-badge">Statutory Portal</span>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="response-card">
+            <div class="response-step-number" aria-hidden="true">05</div>
+            <div class="response-content">
+              <h3>Preserve Critical Evidentiary Trail</h3>
+              <p>Do not delete chat histories, SMS alerts, call logs, or transaction receipts. Capture clean screenshots showing timestamps, suspect phone numbers, and bank UTR numbers. Use our Evidence Checklist below to ensure nothing is missed.</p>
+            </div>
+            <span class="response-action-badge">Preservation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. CYBER SAFETY ASSISTANT (CHATBOT)
+         ========================================================================= -->
+    <section id="assistant" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">03 //</span>
+            <span>AWARENESS ASSISTANT</span>
+          </div>
+          <h2 class="section-title">Query the cyber safety advisor.</h2>
+          <p class="section-subtitle">
+            An offline, rule-based awareness engine that matches scam patterns and supplies immediate preventive advice. Safe, private, and deterministic.
+          </p>
+        </header>
+
+        <div class="assistant-layout">
+          <!-- Assistant Context Sidebar -->
+          <div class="assistant-sidebar">
+            <h3 class="assistant-info-title">Safety Topics</h3>
+            <p class="assistant-info-text">
+              Click any inquiry to test the safety engine, or type your own question in the prompt bar:
+            </p>
+            
+            <span class="quick-prompts-label">Suggested Inquiries</span>
+            <div class="quick-prompts-list">
+              <button type="button" class="prompt-chip" data-prompt="Someone asked me to scan a QR code to receive money">QR Code Payment Scam</button>
+              <button type="button" class="prompt-chip" data-prompt="Police officer on video call says I am under digital arrest">Digital Arrest Extortion</button>
+              <button type="button" class="prompt-chip" data-prompt="Someone asked to install AnyDesk for bank KYC update">AnyDesk / Remote Access</button>
+              <button type="button" class="prompt-chip" data-prompt="I received a fake job task on Telegram offering high returns">Task-Based Job Scam</button>
+              <button type="button" class="prompt-chip" data-prompt="Fake customer care number gave fraudulent refund link">Fake Customer Care</button>
+              <button type="button" class="prompt-chip" data-prompt="Electricity power disconnection message received">Electricity Bill Threat</button>
+              <button type="button" class="prompt-chip" data-prompt="My phone abruptly lost network service SIM swap suspicion">SIM Swap Warning</button>
+              <button type="button" class="prompt-chip" data-prompt="Someone is blackmailing me with intimate photos sextortion">Sextortion &amp; Blackmail</button>
+              <button type="button" class="prompt-chip" data-prompt="Instant loan app is harassing my contacts with edited photos">Loan App Harassment</button>
+              <button type="button" class="prompt-chip" data-prompt="Our office files are encrypted by ransomware demanding bitcoin">Ransomware Emergency</button>
+            </div>
+
+            <div class="disclaimer-box">
+              <strong>System Notice:</strong> This assistant is a rule-based informational tool. It does not replace emergency police reporting or legal counsel.
+            </div>
+          </div>
+
+          <!-- Chat Window -->
+          <div class="chat-interface">
+            <div class="chat-header">
+              <div class="chat-status-indicator">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Rule-Based Cyber Safety Assistant</span>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-light);">STANDALONE ENGINE</span>
+            </div>
+
+            <div id="chatMessages" class="chat-messages" role="log" aria-live="polite">
+              <div class="chat-bubble bot">
+                Greetings. I am the Cyber Sentinels Rule-Based Safety Assistant. You can ask me how to respond to suspicious calls, QR codes, WhatsApp hijackings, or digital arrest threats. How may I advise you today?
+              </div>
+            </div>
+
+            <div class="chat-input-area">
+              <form id="chatForm" class="chat-form" action="#" onsubmit="return false;">
+                <input 
+                  type="text" 
+                  id="chatInput" 
+                  class="chat-input" 
+                  placeholder="Describe your situation (e.g. 'Someone asked for my UPI PIN' or 'AnyDesk requested')..." 
+                  aria-label="Describe suspicious cyber event" 
+                  autocomplete="off"
+                >
+                <button type="submit" id="chatSendBtn" class="btn btn-primary" style="padding: 0.75rem 1.4rem;">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. COMPLAINT DRAFTING TOOL
+         ========================================================================= -->
+    <section id="complaint" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">04 //</span>
+            <span>CIVIC GRIEVANCE DRAFTING</span>
+          </div>
+          <h2 class="section-title">Prepare your official incident narrative.</h2>
+          <p class="section-subtitle">
+            When filing on cybercrime.gov.in or meeting cyber cell officers, disorganized details cause delays. Use this tool to structure a comprehensive, professional draft.
+          </p>
+        </header>
+
+        <div class="generator-layout">
+          <!-- Form Section -->
+          <div class="generator-form-card">
+            <div class="generator-header">
+              <h3>Incident Parameters</h3>
+              <p class="form-subtitle">Enter factual details below. Nothing is uploaded to any remote server.</p>
+            </div>
+
+            <form id="complaintForm" action="#" onsubmit="return false;">
+              <div class="form-group">
+                <label for="compName" class="form-label">Complainant Full Name <span class="required">*</span></label>
+                <input type="text" id="compName" class="form-control" placeholder="e.g. Rajesh Kumar" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="compCategory" class="form-label">Incident Category <span class="required">*</span></label>
+                  <select id="compCategory" class="form-control" required>
+                    <option value="" disabled selected>Select Category...</option>
+                    <option value="UPI / QR Code Financial Fraud">UPI / QR Code Fraud</option>
+                    <option value="Digital Arrest / Extortion Call">Digital Arrest / Extortion</option>
+                    <option value="Remote Screen Access Fraud (AnyDesk/TeamViewer)">Remote Screen Access Fraud</option>
+                    <option value="WhatsApp Account Hijacking">WhatsApp Account Hijacking</option>
+                    <option value="Phishing &amp; Banking Link Theft">Phishing / Credential Theft</option>
+                    <option value="Fake Utility Bill Disconnection Scam">Fake Utility Bill Scam</option>
+                    <option value="Social Media Impersonation / Extortion">Social Media Impersonation</option>
+                    <option value="Job / Investment Opportunity Fraud">Job / Investment Fraud</option>
+                    <option value="Sextortion &amp; Blackmail Threat">Sextortion &amp; Online Blackmail</option>
+                    <option value="Illegal Instant Loan App Harassment">Illegal Loan App Harassment</option>
+                    <option value="SIM Swap &amp; Telecom Interception">SIM Swap &amp; Telecom Interception</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="compDate" class="form-label">Date &amp; Time of Incident <span class="required">*</span></label>
+                  <input type="datetime-local" id="compDate" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="compAmount" class="form-label">Amount Lost (INR)</label>
+                  <input type="number" id="compAmount" class="form-control" placeholder="e.g. 45000">
+                </div>
+                <div class="form-group">
+                  <label for="compTxnId" class="form-label">Transaction ID / UTR Number</label>
+                  <input type="text" id="compTxnId" class="form-control" placeholder="e.g. 432190876543">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="compSuspect" class="form-label">Suspect Contact / Account Identifiers</label>
+                <input type="text" id="compSuspect" class="form-control" placeholder="Phone number, UPI ID, recipient account, or website URL">
+              </div>
+
+              <div class="form-group">
+                <label for="compDescription" class="form-label">Detailed Chronology <span class="required">*</span></label>
+                <textarea id="compDescription" class="form-control" placeholder="Chronologically describe how the incident unfolded: initial message received, instructions given by suspect, actions taken, and realization of fraud..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn" style="width: 100%;">
+                Generate Structured Complaint Draft
+              </button>
+
+              <div class="disclaimer-banner">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span><strong>Drafting Aid Notice:</strong> This tool only formats your statement locally into a structured draft. It does not submit your complaint to police or regulatory bodies.</span>
+              </div>
+            </form>
+          </div>
+
+          <!-- Preview & Action Section -->
+          <div class="generator-preview-card">
+            <div class="generator-header">
+              <h3>Generated Grievance Draft</h3>
+              <p class="form-subtitle">Copy or download this text and paste it into cybercrime.gov.in.</p>
+            </div>
+            
+            <div class="preview-container">
+              <div id="complaintDraftPreview" class="preview-box" role="region" aria-label="Formatted Complaint Output"></div>
+              
+              <div class="preview-actions">
+                <button type="button" id="copyDraftBtn" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  Copy Complaint
+                </button>
+                <button type="button" id="downloadDraftBtn" class="btn btn-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download as .txt
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. EVIDENCE CHECKLIST SECTION
+         ========================================================================= -->
+    <section id="checklist" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">05 //</span>
+            <span>INVESTIGATION READINESS</span>
+          </div>
+          <h2 class="section-title">Critical evidence collection checklist.</h2>
+          <p class="section-subtitle">
+            Law enforcement and banks require concrete digital forensic records to freeze funds and track suspects. Check off each item as you gather it.
+          </p>
+        </header>
+
+        <div class="checklist-container">
+          <div class="checklist-progress-bar">
+            <span class="progress-info">
+              Evidence Artifacts Collected: <span id="checklistCount" class="progress-counter">0</span> of 7
+            </span>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-sage-dark);">TAP TO TOGGLE</span>
+          </div>
+
+          <div class="checklist-grid">
+            <!-- Item 1 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>Transaction Screenshots</h4>
+                <p>Debit confirmation screen showing date, time, debited account, and recipient title.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>UTR / Transaction ID Reference</h4>
+                <p>The exact 12-digit Unique Transaction Reference (UTR) provided by your bank statement.</p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>Bank SMS Notifications</h4>
+                <p>Raw text messages with sender alphanumeric headers (e.g. VM-HDFCBK) informing of the debit.</p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>Suspect Phone Numbers &amp; Handles</h4>
+                <p>Full 10-digit mobile number, WhatsApp profile details, Skype ID, or social media handles.</p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>Suspicious Links &amp; Domain URLs</h4>
+                <p>The complete URL string clicked or shared via SMS (do not re-open the link).</p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>Complete Chat Histories</h4>
+                <p>Full exported conversation logs on WhatsApp, Telegram, or email without deletion.</p>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="checklist-item" tabindex="0" role="checkbox" aria-checked="false" style="grid-column: 1 / -1;">
+              <div class="custom-checkbox" aria-hidden="true">
+                <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="checklist-content">
+                <h4>Email Headers &amp; Attached Files</h4>
+                <p>If contacted via email, export the original .eml file or raw headers showing the originating IP address.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. OFFICIAL RESOURCES SECTION
+         ========================================================================= -->
+    <section id="resources" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">06 //</span>
+            <span>VERIFIED DIRECTORY</span>
+          </div>
+          <h2 class="section-title">Official statutory portals and helplines.</h2>
+          <p class="section-subtitle">
+            Always report directly through recognized Government of India civic portals. Never engage unverified intermediaries claiming to recover lost funds for an upfront fee.
+          </p>
+        </header>
+
+        <div class="resources-grid">
+          <!-- Resource 1 -->
+          <div class="resource-card">
+            <span class="resource-badge primary">PRIMARY REPORTING</span>
+            <h3>cybercrime.gov.in</h3>
+            <p>The Ministry of Home Affairs (MHA) National Cyber Crime Reporting Portal. Lodge formal complaints for financial fraud and cyber offenses against women and children.</p>
+            <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              Visit Official Portal 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Resource 2 -->
+          <div class="resource-card">
+            <span class="resource-badge">TELECOM SECURITY</span>
+            <h3>sancharsaathi.gov.in</h3>
+            <p>Department of Telecommunications initiative enabling citizens to block lost or stolen mobile handsets (CEIR), report fraudulent calls (Chakshu), and check connections registered under your ID.</p>
+            <a href="https://sancharsaathi.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              Visit Sanchar Saathi 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Resource 3 -->
+          <div class="resource-card">
+            <span class="resource-badge primary">IMMEDIATE CALL</span>
+            <h3>Helpline 1930</h3>
+            <p>The Citizen Financial Cyber Fraud Reporting and Management System helpline. Direct link to national payment banks, gateways, and cyber police units for real-time fund freezing.</p>
+            <a href="tel:1930" class="resource-link">
+              Call 1930 (Toll-Free) 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. SOPHISTICATED FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-insignia" aria-hidden="true">
+              <svg class="logo-shield-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 3 L37 8 V19 C37 28.5 22 39 22 39 C22 39 7 28.5 7 19 V8 L22 3 Z" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                <path d="M22 9 V18" stroke="#E8D5D8" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 15 H22 H29" stroke="#E8D5D8" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="15" cy="15" r="2" fill="#C49A83"/>
+                <circle cx="29" cy="15" r="2" fill="#C49A83"/>
+                <path d="M18 24 L22 21 L26 24 V29 L22 32 L18 29 Z" fill="#C49A83" stroke="#FFFFFF" stroke-width="0.8"/>
+                <circle cx="22" cy="26.5" r="1.5" fill="#542033"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">CYBER SENTINELS</span>
+              <span class="brand-tagline">Civic Public Awareness</span>
+            </div>
+          </div>
+          <p class="footer-mission">
+            Empowering citizens with actionable awareness, clear procedural frameworks, and practical defense against evolving cyber threats.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#threats">Cyber Threats</a></li>
+            <li><a href="awareness.html">Online Awareness</a></li>
+            <li><a href="#response">Emergency Protocol</a></li>
+            <li><a href="#assistant">Safety Assistant</a></li>
+            <li><a href="#complaint">Draft Complaint</a></li>
+            <li><a href="#checklist">Evidence Checklist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">Cyber Crime Portal</a></li>
+            <li><a href="https://sancharsaathi.gov.in" target="_blank" rel="noopener noreferrer">Sanchar Saathi</a></li>
+            <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer">Reserve Bank of India</a></li>
+            <li><a href="https://cert-in.org.in" target="_blank" rel="noopener noreferrer">CERT-In Security Alerts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <div class="footer-contact-item">
+            <strong>Financial Fraud Helpline:</strong><br>
+            <a href="tel:1930" style="color: #FFFFFF; text-decoration: underline;">Dial 1930</a> (Available 24x7)
+          </div>
+          <div class="footer-contact-item">
+            <strong>National Emergency:</strong><br>
+            Dial 112
+          </div>
+          <div class="footer-contact-item">
+            <strong>Women Helpline:</strong><br>
+            Dial 1091 / 181
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          <strong>Civic Disclaimer:</strong> Cyber Sentinels is an independent public educational and awareness initiative. This website is not affiliated with, endorsed by, or operated by any government ministry, police department, or legal enforcement body. For official complaint lodgement, please visit <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; text-decoration: underline;">cybercrime.gov.in</a>.
+        </p>
+        <div class="footer-copyright">
+          &copy; Cyber Sentinels. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>

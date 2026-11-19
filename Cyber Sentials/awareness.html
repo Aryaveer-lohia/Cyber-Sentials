@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Cyber Awareness — CYBER SENTINELS</title>
+  <meta name="description" content="A premium digital magazine exploration of modern cyber fraud patterns in India, visual case dossiers, psychological killchains, interactive awareness testing, and emergency reporting.">
+
+  <!-- Typography: Newsreader (Editorial Serif), Inter (Clean Sans-Serif), JetBrains Mono (Code/Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet & Editorial Magazine Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/awareness.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       MAGAZINE NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Wordmark with Custom Shield Insignia -->
+      <a href="index.html" class="brand" aria-label="Cyber Sentinels Home">
+        <div class="brand-insignia" aria-hidden="true">
+          <svg class="logo-shield-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 3 L37 8 V19 C37 28.5 22 39 22 39 C22 39 7 28.5 7 19 V8 L22 3 Z" fill="url(#shieldGradAw)" stroke="#C49A83" stroke-width="1.5"/>
+            <path d="M22 9 V18" stroke="#E8D5D8" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M15 15 H22 H29" stroke="#E8D5D8" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="15" cy="15" r="2" fill="#C49A83"/>
+            <circle cx="29" cy="15" r="2" fill="#C49A83"/>
+            <path d="M18 24 L22 21 L26 24 V29 L22 32 L18 29 Z" fill="#C49A83" stroke="#FFFFFF" stroke-width="0.8"/>
+            <circle cx="22" cy="26.5" r="1.5" fill="#542033"/>
+            <defs>
+              <linearGradient id="shieldGradAw" x1="7" y1="3" x2="37" y2="39" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#762F49"/>
+                <stop offset="1" stop-color="#542033"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CYBER SENTINELS</span>
+          <span class="brand-tagline">Editorial Intelligence</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#threats" class="nav-link">Threats</a>
+        <a href="awareness.html" class="nav-link active">Online Awareness</a>
+        <a href="#case-files" class="nav-link">Case Files</a>
+        <a href="index.html#assistant" class="nav-link">Safety Assistant</a>
+        <a href="index.html#complaint" class="nav-link">Draft Complaint</a>
+        <a href="index.html#checklist" class="nav-link">Checklist</a>
+        <a href="#quiz" class="nav-link">Audit Quiz</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="emergency-btn" title="Official Government Portal">
+          <span class="emergency-pulse" aria-hidden="true"></span>
+          Report Cyber Fraud
+        </a>
+        <button id="mobileMenuToggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION: DIGITAL MAGAZINE COVER FEATURE
+         ========================================================================= -->
+    <section class="hero hero-awareness">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="magazine-volume-strip">
+            <span class="vol-badge">SPECIAL ISSUE</span>
+            <span>PUBLIC AWARENESS DOSSIER // VOL. 02</span>
+          </div>
+
+          <h1 class="hero-title">
+            Recognise the threat.<br>
+            <em>Before it reaches</em> you.
+          </h1>
+
+          <p class="hero-description">
+            Real-world cyber fraud patterns, explained through practical examples, warning signs and prevention strategies. An interactive magazine and tactical survival guide for the digital citizen.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#cases" class="btn btn-primary">Read Case Studies</a>
+            <a href="#quiz" class="btn btn-outline">Take Citizen Audit</a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-pill">
+              <span class="num">1930</span>
+              <span class="desc">National Helpline</span>
+            </div>
+            <div class="hero-stat-pill">
+              <span class="num">06 Vectors</span>
+              <span class="desc">Featured Dossiers</span>
+            </div>
+            <div class="hero-stat-pill">
+              <span class="num">100% Client-Side</span>
+              <span class="desc">Private &amp; Offline</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Civic Radar & Defense Composition -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="composition-frame">
+            <div class="composition-badge">CIVIC THREAT RADAR // ISSUE 02</div>
+            
+            <div class="composition-illustration">
+              <svg class="shield-graphic" viewBox="0 0 320 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Coordinate Border -->
+                <rect x="15" y="15" width="290" height="220" rx="3" stroke="#E6D9D7" stroke-width="1.5" stroke-dasharray="5 5" />
+                <circle cx="15" cy="15" r="4" fill="#542033" />
+                <circle cx="305" cy="15" r="4" fill="#542033" />
+                <circle cx="15" cy="235" r="4" fill="#542033" />
+                <circle cx="305" cy="235" r="4" fill="#542033" />
+
+                <!-- Digital Eye / Radar Orbit -->
+                <circle cx="160" cy="125" r="75" stroke="#E8D5D8" stroke-width="2" />
+                <circle cx="160" cy="125" r="50" stroke="#C49A83" stroke-width="1.5" stroke-dasharray="3 3" />
+                <circle cx="160" cy="125" r="26" fill="#FBF5F6" stroke="#762F49" stroke-width="2" />
+                
+                <!-- Central Eye pupil / shield -->
+                <path d="M160 115 L170 125 L160 135 L150 125 Z" fill="#542033" />
+                
+                <!-- Scanning Sweep Beam -->
+                <line x1="160" y1="125" x2="225" y2="80" stroke="#762F49" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="225" cy="80" r="5" fill="#762F49" />
+
+                <!-- Threat Indicators in Orbit -->
+                <circle cx="105" cy="90" r="4" fill="#C49A83" />
+                <circle cx="210" cy="165" r="4" fill="#C49A83" />
+              </svg>
+            </div>
+
+            <div class="composition-stats">
+              <div class="stat-item">
+                <span class="stat-number">Awareness</span>
+                <span class="stat-label">First Line of Defense</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">&lt; 2 Hours</span>
+                <span class="stat-label">Golden Window to Freeze Accounts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 1: UNDERSTANDING CYBER FRAUD (MAGAZINE EDITORIAL FOUNDATIONS)
+         ========================================================================= -->
+    <section class="section" id="understanding">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">01 //</span>
+            <span>MAGAZINE PROLOGUE</span>
+          </div>
+          <h2 class="section-title">The architecture of modern deception.</h2>
+          <p class="section-subtitle">
+            Cybercrime is rarely about brute-forcing software passwords. It is psychological social engineering—manipulating human emotion to bypass digital locks from within.
+          </p>
+        </header>
+
+        <div class="foundations-grid">
+          <!-- Foundation 1 -->
+          <div class="foundation-card">
+            <span class="foundation-badge">
+              <span>PRINCIPIUM 01</span>
+            </span>
+            <h3>What Cybercrime Is</h3>
+            <p>
+              Any criminal offense conducted through digital infrastructure—smartphones, internet banking, or payment networks. It ranges from unauthorized UPI siphoning to deepfake impersonation and extortion.
+            </p>
+          </div>
+
+          <!-- Foundation 2 -->
+          <div class="foundation-card">
+            <span class="foundation-badge">
+              <span>PRINCIPIUM 02</span>
+            </span>
+            <h3>Why Fraud is Exploding</h3>
+            <p>
+              Real-time payment rails like UPI and frictionless mobile apps allow stolen money to disperse through multiple "mule" accounts within seconds, complicating traditional police recovery timelines.
+            </p>
+          </div>
+
+          <!-- Foundation 3 -->
+          <div class="foundation-card">
+            <span class="foundation-badge">
+              <span>PRINCIPIUM 03</span>
+            </span>
+            <h3>Urgency, Fear &amp; Trust</h3>
+            <p>
+              Scammers manufacture psychological emergencies: an impending electric disconnection, an intercepted narcotics parcel, or an expiring job offer. Panic disables logic and drives rushed actions.
+            </p>
+          </div>
+
+          <!-- Foundation 4 -->
+          <div class="foundation-card">
+            <span class="foundation-badge">
+              <span>PRINCIPIUM 04</span>
+            </span>
+            <h3>Awareness as First Defense</h3>
+            <p>
+              No banking encryption can save an account if a user voluntarily yields an OTP or scans a reverse QR code. Informed skepticism is the citizen’s single most impenetrable firewall.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTIONS 2 & 3: EDITORIAL MAGAZINE CASE STUDY DOSSIERS
+         Alternating Layouts (Odd: Image Left | Even: Image Right)
+         ========================================================================= -->
+    <section class="section" id="cases">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">02 //</span>
+            <span>INVESTIGATIVE DOSSIERS</span>
+          </div>
+          <h2 class="section-title">Case studies: The 6 major Indian fraud vectors.</h2>
+          <p class="section-subtitle">
+            Examine in-depth breakdowns of real-world scam patterns reported across state cyber crime cells and the National Cyber Crime Reporting Portal.
+          </p>
+        </header>
+
+        <div class="case-studies-container">
+
+          <!-- Case 1: Jamtara-Style Phishing (Image Left) -->
+          <article class="case-study-card" data-theme="phishing">
+            <div class="case-visual-col">
+              <div class="case-visual-top">
+                <span class="case-tag">DOSSIER 01</span>
+                <span class="case-category-pill">CREDENTIAL THEFT</span>
+              </div>
+
+              <!-- Illustration 1: Phone, Hook & Compromised Card -->
+              <div class="case-vector-wrapper">
+                <svg class="case-vector-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Phone Frame -->
+                  <rect x="60" y="25" width="160" height="175" rx="12" fill="#FFFFFF" stroke="#D8C6C3" stroke-width="2"/>
+                  <rect x="75" y="45" width="130" height="75" rx="4" fill="#FBF5F6" stroke="#E6D9D7"/>
+                  <circle cx="140" cy="175" r="10" stroke="#762F49" stroke-width="2"/>
+                  <!-- Fishing Line & Hook -->
+                  <path d="M140 10 C165 10 185 30 185 65 C185 95 160 115 145 115 C132 115 125 102 125 90" stroke="#762F49" stroke-width="3.5" stroke-linecap="round"/>
+                  <line x1="140" y1="0" x2="140" y2="10" stroke="#C49A83" stroke-width="2" stroke-dasharray="3 3"/>
+                  <!-- Hooked Credit Card -->
+                  <rect x="110" y="70" width="70" height="42" rx="4" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                  <rect x="115" y="80" width="14" height="10" rx="2" fill="#C49A83"/>
+                  <line x1="110" y1="96" x2="180" y2="96" stroke="#FFFCFA" stroke-width="1.5"/>
+                  <!-- Warning Badge -->
+                  <circle cx="195" cy="40" r="16" fill="#762F49"/>
+                  <text x="191" y="46" fill="#FFFFFF" font-size="16" font-weight="bold">!</text>
+                </svg>
+              </div>
+
+              <div class="case-caption-bar">
+                <strong>Visual Evidence // Vector 01</strong>
+                Fake telecom and banking portals lure victims into volunteering personal 6-digit OTPs under false threats of SIM deactivation.
+              </div>
+            </div>
+
+            <div class="case-content-col">
+              <div class="case-header">
+                <span class="case-kicker">TELECOM &amp; KYC IMPERSONATION</span>
+                <h3 class="case-title">1. Jamtara-Style Phishing &amp; Vishing</h3>
+                <p class="case-short-desc">
+                  Phone calls and deceptive SMS messages impersonating bank customer care, electricity boards, or telecom KYC desks to extract banking credentials, card numbers, and OTPs.
+                </p>
+              </div>
+
+              <div class="case-grid-details">
+                <div class="detail-block block-works">
+                  <h4>Mechanism</h4>
+                  <p>Callers claim your bank account or SIM card will be deactivated within 24 hours. They send a shortened link leading to a cloned banking login page or ask you to verbally disclose an OTP received on your device.</p>
+                </div>
+                <div class="detail-block block-warning">
+                  <h4>Warning Signs</h4>
+                  <ul>
+                    <li>Calls originating from ordinary 10-digit personal numbers</li>
+                    <li>Extreme urgency threatening immediate account deactivation</li>
+                    <li>Solicitation of full card CVV numbers, expiry dates, or SMS OTPs</li>
+                  </ul>
+                </div>
+                <div class="detail-block block-protect">
+                  <h4>Protection Rule</h4>
+                  <p>Banks NEVER solicit passwords, PINs, or OTPs over phone calls. Verify alerts solely by calling the phone number printed on the back of your bank debit card.</p>
+                </div>
+                <div class="detail-block block-affected">
+                  <h4>If Affected</h4>
+                  <p>Instantly block your debit card via net banking. Call your bank's 24/7 fraud helpline and report the transaction reference number to helpline <strong>1930</strong>.</p>
+                </div>
+              </div>
+
+              <div class="case-footer-action">
+                <span><strong>Editorial Rule:</strong> An SMS OTP is a master authorization key. Never read it out to anyone over a phone call.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2: Digital Arrest (Image Right - Alternating) -->
+          <article class="case-study-card layout-reverse" data-theme="extortion">
+            <div class="case-visual-col">
+              <div class="case-visual-top">
+                <span class="case-tag">DOSSIER 02</span>
+                <span class="case-category-pill">VIDEO EXTORTION</span>
+              </div>
+
+              <!-- Illustration 2: Fake Video Call Monitor & Staged Court -->
+              <div class="case-vector-wrapper">
+                <svg class="case-vector-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Monitor Display -->
+                  <rect x="40" y="30" width="200" height="145" rx="8" fill="#FFFFFF" stroke="#D8C6C3" stroke-width="2"/>
+                  <path d="M40 145 H240" stroke="#E6D9D7" stroke-width="1.5"/>
+                  <!-- Monitor Stand -->
+                  <path d="M125 175 H155 V195 H125 Z" fill="#E8D5D8" stroke="#D8C6C3" stroke-width="1.5"/>
+                  <rect x="105" y="195" width="70" height="8" rx="2" fill="#542033"/>
+                  <!-- Impersonator in Uniform -->
+                  <circle cx="140" cy="75" r="22" fill="#542033"/>
+                  <path d="M110 135 C110 108 170 108 170 135 Z" fill="#762F49"/>
+                  <!-- Epaulettes / Gold Stars -->
+                  <circle cx="120" cy="120" r="3" fill="#C49A83"/>
+                  <circle cx="160" cy="120" r="3" fill="#C49A83"/>
+                  <!-- Video Call Live Indicator -->
+                  <circle cx="58" cy="46" r="4.5" fill="#C49A83"/>
+                  <text x="68" y="50" fill="#5C4F55" font-size="9" font-family="monospace" font-weight="bold">SKYPE CALL</text>
+                  <!-- Handcuff Emblem -->
+                  <circle cx="210" cy="115" r="10" stroke="#542033" stroke-width="2"/>
+                  <circle cx="225" cy="115" r="10" stroke="#542033" stroke-width="2"/>
+                  <line x1="219" y1="115" x2="216" y2="115" stroke="#542033" stroke-width="2"/>
+                </svg>
+              </div>
+
+              <div class="case-caption-bar">
+                <strong>Visual Evidence // Vector 02</strong>
+                Fraudsters stage artificial police station backdrops and wear replica uniforms over Skype/WhatsApp video calls to terrify victims.
+              </div>
+            </div>
+
+            <div class="case-content-col">
+              <div class="case-header">
+                <span class="case-kicker">AUTHORITY INTIMIDATION</span>
+                <h3 class="case-title">2. Digital Arrest &amp; Video Extortion</h3>
+                <p class="case-short-desc">
+                  Criminals masquerading as police officers, Customs, CBI, or ED personnel conduct video calls claiming a seized courier with narcotics or money laundering bears the victim’s Aadhaar.
+                </p>
+              </div>
+
+              <div class="case-grid-details">
+                <div class="detail-block block-works">
+                  <h4>Mechanism</h4>
+                  <p>The victim is told an illegal courier was booked in their name. The call is transferred to a fake police officer on Skype who demands they stay on video call under "digital arrest", threatening imprisonment unless funds are sent to an "escrow account".</p>
+                </div>
+                <div class="detail-block block-warning">
+                  <h4>Warning Signs</h4>
+                  <ul>
+                    <li>Insistence on continuous video connection without disconnecting</li>
+                    <li>Displaying forged arrest warrants, FIR copies, or Supreme Court letters</li>
+                    <li>Demands to transfer savings into "RBI verification accounts"</li>
+                  </ul>
+                </div>
+                <div class="detail-block block-protect">
+                  <h4>Protection Rule</h4>
+                  <p><strong>Legal Reality:</strong> Indian law does not possess any concept of "Digital Arrest". Real police never conduct interrogations or demand fund transfers over video calls.</p>
+                </div>
+                <div class="detail-block block-affected">
+                  <h4>If Affected</h4>
+                  <p>Hang up immediately. Block the number. Report the caller's mobile details to <strong>sancharsaathi.gov.in</strong> (Chakshu) and register an FIR on <strong>cybercrime.gov.in</strong>.</p>
+                </div>
+              </div>
+
+              <div class="case-footer-action">
+                <span><strong>Statutory Law:</strong> State Police and Central Agencies always issue formal physical summons under Section 41A CrPC / relevant BNSS provisions.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3: UPI & QR Code Scams (Image Left) -->
+          <article class="case-study-card" data-theme="upi">
+            <div class="case-visual-col">
+              <div class="case-visual-top">
+                <span class="case-tag">DOSSIER 03</span>
+                <span class="case-category-pill">PAYMENT MANIPULATION</span>
+              </div>
+
+              <!-- Illustration 3: QR Code & Drain Mechanism -->
+              <div class="case-vector-wrapper">
+                <svg class="case-vector-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- QR Grid Frame -->
+                  <rect x="60" y="30" width="160" height="160" rx="8" fill="#FFFFFF" stroke="#D8C6C3" stroke-width="2"/>
+                  <!-- Position Markers -->
+                  <rect x="75" y="45" width="34" height="34" fill="#542033"/>
+                  <rect x="81" y="51" width="22" height="22" fill="#FFFFFF"/>
+                  <rect x="86" y="56" width="12" height="12" fill="#542033"/>
+                  
+                  <rect x="171" y="45" width="34" height="34" fill="#542033"/>
+                  <rect x="177" y="51" width="22" height="22" fill="#FFFFFF"/>
+                  <rect x="182" y="56" width="12" height="12" fill="#542033"/>
+
+                  <rect x="75" y="141" width="34" height="34" fill="#542033"/>
+                  <rect x="81" y="147" width="22" height="22" fill="#FFFFFF"/>
+                  <rect x="86" y="152" width="12" height="12" fill="#542033"/>
+
+                  <!-- Outflowing Flow Line -->
+                  <path d="M140 100 L140 160 M140 160 L130 148 M140 160 L150 148" stroke="#762F49" stroke-width="4" stroke-linecap="round"/>
+                  <rect x="120" y="168" width="85" height="26" rx="3" fill="#762F49"/>
+                  <text x="127" y="185" fill="#FFFFFF" font-size="10" font-family="monospace" font-weight="bold">PIN REQUIRED</text>
+                </svg>
+              </div>
+
+              <div class="case-caption-bar">
+                <strong>Visual Evidence // Vector 03</strong>
+                Scammers exploit user ignorance of UPI mechanics by sending payment authorization QR codes falsely labeled as "Receive Money".
+              </div>
+            </div>
+
+            <div class="case-content-col">
+              <div class="case-header">
+                <span class="case-kicker">MARKETPLACE FRAUD</span>
+                <h3 class="case-title">3. UPI Collect Requests &amp; QR Code Scams</h3>
+                <p class="case-short-desc">
+                  Tricking online sellers on OLX or marketplace apps into scanning QR codes or approving collect requests under the false belief that doing so deposits money into their bank account.
+                </p>
+              </div>
+
+              <div class="case-grid-details">
+                <div class="detail-block block-works">
+                  <h4>Mechanism</h4>
+                  <p>When selling items online, a prospective buyer agrees to pay in advance. They send a QR code or initiate a UPI collect request, instructing the seller to scan it and enter their PIN to "claim" the transferred funds.</p>
+                </div>
+                <div class="detail-block block-warning">
+                  <h4>Warning Signs</h4>
+                  <ul>
+                    <li>Buyer claiming corporate accounts require sellers to scan codes</li>
+                    <li>UPI screens showing a prominent "PAY" button with an amount</li>
+                    <li>Any instruction demanding your secret 4-digit or 6-digit PIN</li>
+                  </ul>
+                </div>
+                <div class="detail-block block-protect">
+                  <h4>Protection Rule</h4>
+                  <p><strong>The Golden UPI Rule:</strong> Entering a UPI PIN always authorizes money to LEAVE your account. Receiving payments or refunds NEVER requires a PIN or scanning a code.</p>
+                </div>
+                <div class="detail-block block-affected">
+                  <h4>If Affected</h4>
+                  <p>Immediately open your mobile banking app to block UPI services. Contact your bank to request an immediate lien hold and dial <strong>1930</strong> within 2 hours.</p>
+                </div>
+              </div>
+
+              <div class="case-footer-action">
+                <span><strong>Core Fact:</strong> Receiving money via UPI requires only your registered mobile number or UPI ID—nothing more.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 4: Fake Investment & Trading (Image Right - Alternating) -->
+          <article class="case-study-card layout-reverse" data-theme="trading">
+            <div class="case-visual-col">
+              <div class="case-visual-top">
+                <span class="case-tag">DOSSIER 04</span>
+                <span class="case-category-pill">FINANCIAL PONZI</span>
+              </div>
+
+              <!-- Illustration 4: Manipulated Stock Dashboard & Locked Funds -->
+              <div class="case-vector-wrapper">
+                <svg class="case-vector-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- App Interface -->
+                  <rect x="45" y="25" width="190" height="170" rx="10" fill="#FFFFFF" stroke="#D8C6C3" stroke-width="2"/>
+                  <!-- Header Bar -->
+                  <rect x="45" y="25" width="190" height="30" rx="4" fill="#F6ECEF"/>
+                  <circle cx="60" cy="40" r="4" fill="#762F49"/>
+                  <circle cx="72" cy="40" r="4" fill="#C49A83"/>
+                  <!-- Graph Background Lines -->
+                  <line x1="65" y1="135" x2="215" y2="135" stroke="#E6D9D7" stroke-width="1.5"/>
+                  <line x1="65" y1="75" x2="65" y2="135" stroke="#E6D9D7" stroke-width="1.5"/>
+                  <!-- Manipulated Skyrocketing Curve -->
+                  <path d="M65 125 C105 120 135 105 160 80 T215 60" stroke="#762F49" stroke-width="3.5" fill="none"/>
+                  <!-- Fake Returns Badge -->
+                  <rect x="135" y="65" width="85" height="26" rx="3" fill="#542033"/>
+                  <text x="142" y="82" fill="#FFFFFF" font-size="10" font-family="monospace" font-weight="bold">+450% PROFIT</text>
+                  <!-- Padlock on Withdrawal -->
+                  <rect x="95" y="150" width="90" height="28" rx="3" fill="#FBF5F6" stroke="#762F49" stroke-width="1.5"/>
+                  <circle cx="110" cy="164" r="5" fill="#762F49"/>
+                  <text x="122" y="168" fill="#762F49" font-size="9" font-weight="bold">WITHDRAW LOCKED</text>
+                </svg>
+              </div>
+
+              <div class="case-caption-bar">
+                <strong>Visual Evidence // Vector 04</strong>
+                Cloned investment apps display simulated, artificial portfolio gains to coax victims into depositing tens of lakhs of rupees.
+              </div>
+            </div>
+
+            <div class="case-content-col">
+              <div class="case-header">
+                <span class="case-kicker">SECURITIES FRAUD</span>
+                <h3 class="case-title">4. Fake Investment &amp; Trading Apps</h3>
+                <p class="case-short-desc">
+                  Cloned trading platforms, fraudulent Telegram advisory groups, and fake cryptocurrency websites displaying fabricated gains that can never be withdrawn.
+                </p>
+              </div>
+
+              <div class="case-grid-details">
+                <div class="detail-block block-works">
+                  <h4>Mechanism</h4>
+                  <p>Victims are added to Telegram groups sharing forged profit screenshots. They are encouraged to deposit small sums, which display inflated artificial gains. When attempting to withdraw, scammers demand "tax clearance fees" or "forex release deposits", draining further capital.</p>
+                </div>
+                <div class="detail-block block-warning">
+                  <h4>Warning Signs</h4>
+                  <ul>
+                    <li>Promises of guaranteed returns (e.g. 20% to 50% weekly profit)</li>
+                    <li>Instructing investments to be sent to personal savings accounts via UPI</li>
+                    <li>Apps downloaded from third-party APK links rather than official app stores</li>
+                  </ul>
+                </div>
+                <div class="detail-block block-protect">
+                  <h4>Protection Rule</h4>
+                  <p>Only invest through brokers registered with the Securities and Exchange Board of India (SEBI). Verify SEBI registration numbers on official portals before transferring money.</p>
+                </div>
+                <div class="detail-block block-affected">
+                  <h4>If Affected</h4>
+                  <p>Cease sending any additional "clearance fees". Save all chat records, transfer receipts, and beneficiary UPI IDs. Lodge a complaint on <strong>cybercrime.gov.in</strong>.</p>
+                </div>
+              </div>
+
+              <div class="case-footer-action">
+                <span><strong>SEBI Statutory Notice:</strong> High financial returns with zero market risk do not exist. Fixed returns on stock equities are legally impossible.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 5: Job & Task-Based Scams (Image Left) -->
+          <article class="case-study-card" data-theme="job">
+            <div class="case-visual-col">
+              <div class="case-visual-top">
+                <span class="case-tag">DOSSIER 05</span>
+                <span class="case-category-pill">WORK-FROM-HOME TRAP</span>
+              </div>
+
+              <!-- Illustration 5: Like Bait & Financial Extortion -->
+              <div class="case-vector-wrapper">
+                <svg class="case-vector-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Task Window -->
+                  <rect x="50" y="25" width="180" height="170" rx="8" fill="#FFFFFF" stroke="#D8C6C3" stroke-width="2"/>
+                  <!-- Video Like Icon -->
+                  <circle cx="95" cy="70" r="22" fill="#F6ECEF" stroke="#762F49" stroke-width="1.5"/>
+                  <path d="M90 73 V66 C90 64 92 62 94 62 C96 62 97 64 97 66 V73 H104 C106 73 107 75 106 77 L103 84 H90 V73 Z" fill="#762F49"/>
+                  <!-- Earnings Badge -->
+                  <rect x="130" y="58" width="85" height="24" rx="3" fill="#FBF5F6" stroke="#C49A83"/>
+                  <text x="138" y="74" fill="#542033" font-size="10" font-weight="bold">EARNED ₹500</text>
+                  <!-- Trap Transition Arrow -->
+                  <path d="M140 92 V115 M140 115 L135 108 M140 115 L145 108" stroke="#C49A83" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Frozen Deposit Demand -->
+                  <rect x="65" y="125" width="150" height="48" rx="4" fill="#542033"/>
+                  <text x="76" y="145" fill="#FFFFFF" font-size="9" font-family="monospace">PRE-PAID VIP TASK</text>
+                  <text x="76" y="160" fill="#C49A83" font-size="10" font-weight="bold">DEPOSIT ₹1,00,000</text>
+                </svg>
+              </div>
+
+              <div class="case-caption-bar">
+                <strong>Visual Evidence // Vector 05</strong>
+                Fraudsters disburse small real payments (₹200 to ₹500) for simple rating tasks to build trust, before trapping victims in non-refundable deposit schemes.
+              </div>
+            </div>
+
+            <div class="case-content-col">
+              <div class="case-header">
+                <span class="case-kicker">EMPLOYMENT FRAUD</span>
+                <h3 class="case-title">5. Job &amp; Task-Based Pre-Paid Scams</h3>
+                <p class="case-short-desc">
+                  Unsolicited WhatsApp or Telegram messages offering part-time work-from-home jobs such as rating hotels on Google Maps or liking YouTube videos for cash payouts.
+                </p>
+              </div>
+
+              <div class="case-grid-details">
+                <div class="detail-block block-works">
+                  <h4>Mechanism</h4>
+                  <p>In Phase 1, fraudsters disburse small genuine payments (₹200 to ₹500) for simple tasks to build trust. In Phase 2, the victim is added to a "VIP task" group requiring an upfront deposit (₹5,000 to ₹1,00,000) to unlock higher rewards, after which withdrawals are permanently frozen.</p>
+                </div>
+                <div class="detail-block block-warning">
+                  <h4>Warning Signs</h4>
+                  <ul>
+                    <li>Messages from international country codes (+62, +84, +234) offering part-time roles</li>
+                    <li>Requirement to pay money in order to work or unlock earned wages</li>
+                    <li>Communication restricted strictly to anonymous Telegram group channels</li>
+                  </ul>
+                </div>
+                <div class="detail-block block-protect">
+                  <h4>Protection Rule</h4>
+                  <p>Legitimate employers never demand upfront security deposits or task fees to disburse salaries. Treat any job requiring an upfront deposit as an immediate scam.</p>
+                </div>
+                <div class="detail-block block-affected">
+                  <h4>If Affected</h4>
+                  <p>Capture screenshots of Telegram groups, bank account transfer details, and deposit slips. Notify your bank branch to initiate chargeback claims and file on <strong>1930</strong>.</p>
+                </div>
+              </div>
+
+              <div class="case-footer-action">
+                <span><strong>Psychological Insight:</strong> The small initial reward is psychological bait designed to eliminate skepticism before demanding major deposits.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 6: SIM Swap (Image Right - Alternating) -->
+          <article class="case-study-card layout-reverse" data-theme="telecom">
+            <div class="case-visual-col">
+              <div class="case-visual-top">
+                <span class="case-tag">DOSSIER 06</span>
+                <span class="case-category-pill">TELECOM INTERCEPTION</span>
+              </div>
+
+              <!-- Illustration 6: SIM Card Hijack & Disconnected Tower -->
+              <div class="case-vector-wrapper">
+                <svg class="case-vector-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- SIM Card Graphic -->
+                  <path d="M80 35 H165 L195 65 V175 H80 Z" fill="#FFFFFF" stroke="#D8C6C3" stroke-width="2"/>
+                  <!-- Golden Microchip -->
+                  <rect x="100" y="80" width="65" height="60" rx="4" fill="#FBF5F6" stroke="#C49A83" stroke-width="1.5"/>
+                  <line x1="100" y1="110" x2="165" y2="110" stroke="#C49A83" stroke-width="1.5"/>
+                  <line x1="132" y1="80" x2="132" y2="140" stroke="#C49A83" stroke-width="1.5"/>
+                  <line x1="100" y1="95" x2="132" y2="95" stroke="#C49A83" stroke-width="1.5"/>
+                  <line x1="132" y1="125" x2="165" y2="125" stroke="#C49A83" stroke-width="1.5"/>
+                  <!-- Cut Off Telecom Signal -->
+                  <circle cx="205" cy="155" r="20" fill="#762F49"/>
+                  <line x1="193" y1="143" x2="217" y2="167" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+                  <line x1="217" y1="143" x2="193" y2="167" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+                  <!-- Tower Wave Warning -->
+                  <path d="M50 80 C40 95 40 115 50 130" stroke="#C49A83" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M40 70 C25 90 25 125 40 145" stroke="#C49A83" stroke-width="1.5" stroke-dasharray="2 2" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <div class="case-caption-bar">
+                <strong>Visual Evidence // Vector 06</strong>
+                Attackers acquire duplicate SIM cards using leaked identity documents, leaving the victim’s phone without cellular network while intercepting two-factor banking SMS.
+              </div>
+            </div>
+
+            <div class="case-content-col">
+              <div class="case-header">
+                <span class="case-kicker">IDENTITY HIJACKING</span>
+                <h3 class="case-title">6. SIM Swap &amp; Telecom Interception</h3>
+                <p class="case-short-desc">
+                  Criminals obtain a duplicate SIM card registered under your identity, causing your genuine SIM card to lose network coverage while they intercept banking OTPs.
+                </p>
+              </div>
+
+              <div class="case-grid-details">
+                <div class="detail-block block-works">
+                  <h4>Mechanism</h4>
+                  <p>Using stolen Aadhaar details and forged ID documents, fraudsters convince telecom operators that your SIM was lost. Once the duplicate SIM activates, your phone loses all network signal, allowing the attacker to receive your incoming OTPs and reset net banking passwords.</p>
+                </div>
+                <div class="detail-block block-warning">
+                  <h4>Warning Signs</h4>
+                  <ul>
+                    <li>Sudden, persistent loss of mobile network service in strong coverage areas</li>
+                    <li>Repeated missed calls from strange numbers immediately before service drops</li>
+                    <li>SMS alerts from your telecom operator confirming a SIM upgrade request</li>
+                  </ul>
+                </div>
+                <div class="detail-block block-protect">
+                  <h4>Protection Rule</h4>
+                  <p>If your phone abruptly displays "No Service" for more than 30 minutes, immediately call your telecom operator from another phone to check if a duplicate SIM was issued.</p>
+                </div>
+                <div class="detail-block block-affected">
+                  <h4>If Affected</h4>
+                  <p>Contact your mobile provider immediately to block the duplicate SIM. Notify your bank to freeze net banking and UPI access, and register the incident on <strong>1930</strong>.</p>
+                </div>
+              </div>
+
+              <div class="case-footer-action">
+                <span><strong>Sanchar Saathi Safety Tool:</strong> Use the government's <em>TAFCOP</em> portal on sancharsaathi.gov.in to check all mobile numbers registered under your identity document.</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: CYBERCRIME CASE FILES
+         Real incidents. Real consequences. Important lessons.
+         ========================================================================= -->
+    <section class="section case-files-section" id="case-files">
+      <div class="container">
+        
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">DOSSIER ARCHIVE //</span>
+            <span>INVESTIGATIVE CYBERCRIME REPOSITORY</span>
+          </div>
+          <h2 class="section-title">CYBERCRIME CASE FILES</h2>
+          <p class="section-subtitle">Real incidents. Real consequences. Important lessons.</p>
+          <p class="case-files-intro">
+            A curated forensic analysis of major documented cybercrime operations in India and internationally. Every case reflects documented law enforcement filings, government investigations, and regulatory security briefings.
+          </p>
+        </header>
+
+        <!-- Interactive Case Filter Controls -->
+        <div class="case-filter-wrapper" role="region" aria-label="Case Dossier Filter Options">
+          <div class="case-filter-label"><span class="filter-icon">⚡</span> Filter Archives:</div>
+          <div class="case-filter-buttons" role="group" aria-label="Filter case dossiers by region or crime taxonomy">
+            <button type="button" class="case-filter-btn active" data-filter="all">All Cases <span class="filter-count">(5)</span></button>
+            <button type="button" class="case-filter-btn" data-filter="india">India <span class="filter-count">(3)</span></button>
+            <button type="button" class="case-filter-btn" data-filter="international">International <span class="filter-count">(2)</span></button>
+            <button type="button" class="case-filter-btn" data-filter="financial-fraud">Financial Fraud <span class="filter-count">(3)</span></button>
+            <button type="button" class="case-filter-btn" data-filter="ransomware">Ransomware <span class="filter-count">(1)</span></button>
+            <button type="button" class="case-filter-btn" data-filter="crypto">Cryptocurrency Theft <span class="filter-count">(1)</span></button>
+          </div>
+        </div>
+
+        <!-- Case Dossier Cards List -->
+        <div class="case-files-list">
+
+          <!-- ===================================================================
+               CASE 01: BENGALURU DIGITAL ARREST FRAUD (INDIA)
+               =================================================================== -->
+          <article class="case-file-card" data-country="india" data-category="financial-fraud">
+            <div class="case-file-visual-col">
+              <div class="case-file-badge-row">
+                <span class="case-file-num">CASE 01</span>
+                <span class="country-badge badge-india">
+                  <span class="flag-circle">🇮🇳</span> INDIA
+                </span>
+                <span class="crime-tag-badge">Financial Fraud</span>
+              </div>
+
+              <!-- Labeled Original SVG Illustration -->
+              <div class="case-file-illustration-wrap">
+                <span class="illustration-meta-label">Forensic Illustration // Staged Judicial Video Coercion</span>
+                <svg class="case-file-svg" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration depicting a laptop screen with a staged Supreme Court judicial room and simulated police badge intimidation">
+                  <!-- Laptop Chassis -->
+                  <rect x="40" y="24" width="260" height="156" rx="8" fill="#241B20" stroke="#762F49" stroke-width="2"/>
+                  <!-- Screen Bezel Interior -->
+                  <rect x="48" y="32" width="244" height="140" rx="4" fill="#30242A"/>
+                  
+                  <!-- Fake Video Grid Split (2-Panel Police & Court) -->
+                  <rect x="54" y="38" width="114" height="96" rx="3" fill="#1C1418" stroke="#542033" stroke-width="1"/>
+                  <rect x="172" y="38" width="114" height="96" rx="3" fill="#1C1418" stroke="#542033" stroke-width="1"/>
+                  
+                  <!-- Left Panel: Impersonated Officer Profile -->
+                  <circle cx="111" cy="68" r="16" fill="#762F49"/>
+                  <path d="M88 108 C88 92 100 86 111 86 C122 86 134 92 134 108 Z" fill="#542033"/>
+                  <rect x="100" y="55" width="22" height="6" rx="2" fill="#C49A83"/>
+                  <!-- Fake Police Badge Overlay -->
+                  <circle cx="70" cy="52" r="8" fill="#C49A83"/>
+                  <path d="M70 48 L73 54 L67 54 Z" fill="#542033"/>
+                  <text x="82" y="55" fill="#E8D5D8" font-size="7" font-family="'JetBrains Mono', monospace">STATION: CRIME BRANCH</text>
+                  
+                  <!-- Right Panel: Fake Supreme Court Chamber Backing -->
+                  <rect x="178" y="44" width="102" height="24" rx="2" fill="#542033" opacity="0.6"/>
+                  <text x="183" y="58" fill="#F6EFE9" font-size="7.5" font-family="'Newsreader', serif" font-weight="bold">SUPREME COURT PROCEEDING</text>
+                  <!-- Gavel Symbol -->
+                  <path d="M220 78 L232 70 L238 78 L226 86 Z" fill="#C49A83"/>
+                  <line x1="229" y1="82" x2="242" y2="95" stroke="#E8D5D8" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="238" y="93" width="14" height="5" rx="1" fill="#C49A83"/>
+                  
+                  <!-- Video Status Bar -->
+                  <rect x="54" y="140" width="232" height="26" rx="3" fill="#160E12"/>
+                  <circle cx="66" cy="153" r="4" fill="#C0392B"/>
+                  <text x="76" y="156" fill="#E8D5D8" font-size="8.5" font-family="'JetBrains Mono', monospace">REC: 11-DAY COERCION PROTOCOL</text>
+                  <rect x="230" y="146" width="48" height="14" rx="2" fill="#762F49"/>
+                  <text x="235" y="156" fill="#FFFFFF" font-size="7.5" font-weight="bold">UNDER ARREST</text>
+
+                  <!-- Laptop Base -->
+                  <path d="M20 180 H320 L300 196 H40 Z" fill="#3D2B33" stroke="#542033" stroke-width="1.5"/>
+                  <rect x="146" y="182" width="48" height="4" rx="2" fill="#C49A83"/>
+                  
+                  <!-- Extorted Transfer Amount Overlay Pill -->
+                  <g transform="translate(68, 204)">
+                    <rect x="0" y="0" width="204" height="28" rx="14" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                    <text x="12" y="18" fill="#FFFFFF" font-size="11" font-weight="bold" font-family="'Inter', sans-serif">EXTORTION: ₹11 CRORE</text>
+                    <text x="148" y="17" fill="#C49A83" font-size="9" font-family="'JetBrains Mono', monospace">11 DAYS</text>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Impact Statement Highlight Box -->
+              <div class="impact-metric-box">
+                <span class="impact-label">REPORTED MONETARY EXTORTION</span>
+                <span class="impact-figure">₹11 Crore (~$1.32M USD)</span>
+                <span class="impact-period">Reporting Period: January 2025 // Bengaluru, Karnataka</span>
+              </div>
+            </div>
+
+            <div class="case-file-content-col">
+              <div class="case-file-header">
+                <span class="case-file-kicker">DOCS // 2025-IN-01</span>
+                <h3 class="case-file-title">Bengaluru Digital Arrest Fraud: 11-Day Psychological Hostage Crisis</h3>
+                <div class="case-file-dateline">
+                  <span><strong>Reported Date:</strong> January 2025</span>
+                  <span class="meta-separator">•</span>
+                  <span><strong>Target Profile:</strong> Senior Software Professional / Tech Executive</span>
+                </div>
+              </div>
+
+              <div class="case-analysis-grid">
+                <!-- What Happened -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">1. What Happened?</h4>
+                  <p>A senior software professional residing in Bengaluru was contacted by criminals claiming a courier consignment addressed in his name had been intercepted containing narcotics and illegal passports. Over an ordeal spanning 11 consecutive days, the perpetrators kept the victim locked in a continuous video interrogation, systematically coercing him into liquidating company equity, breaking fixed deposits, and transferring approximately ₹11 crore across designated bank accounts.</p>
+                </div>
+
+                <!-- How Attack Worked -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">2. How Did the Attack Work?</h4>
+                  <p>The attackers combined multiple psychological coercion tactics:</p>
+                  <ul class="analysis-list">
+                    <li><strong>Agency Escalation:</strong> Calls started from fake telecom and courier agents before being "transferred" to counterfeit police officers and the CBI.</li>
+                    <li><strong>Fabricated Judicial Ambience:</strong> Attackers staged a simulated Supreme Court hearing room on video, displaying court logos, formal robes, and fraudulent arrest warrants stamped with forged emblems.</li>
+                    <li><strong>Continuous Video Surveillance:</strong> The victim was ordered under threat of immediate physical SWAT raid to keep his webcam active 24/7, preventing any consultation with family, legal counsel, or colleagues.</li>
+                    <li><strong>Safe Holding Account Pretext:</strong> Funds were demanded under the ruse of "Supreme Court-mandated financial verification", falsely guaranteeing a full refund within 48 hours once his name was cleared.</li>
+                  </ul>
+                </div>
+
+                <!-- What Made It Serious -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">3. What Made the Incident Serious?</h4>
+                  <p>This incident represents one of the single largest individual digital arrest extortions documented in Indian cybercrime history. It disproved the misconception that digital fraud targets only technologically naive or elderly demographics; a highly compensated IT professional was isolated, terrorized, and psychologically dominated through institutional intimidation and procedural mimicry.</p>
+                </div>
+
+                <!-- Key Lessons -->
+                <div class="case-analysis-item lessons-card">
+                  <h4 class="analysis-heading lesson-title">💡 What Can Ordinary Internet Users Learn?</h4>
+                  <div class="lesson-callout-content">
+                    <p><strong>The Golden Legal Principle:</strong> Indian Police, the CBI, the Enforcement Directorate (ED), and the Supreme Court of India <em>never</em> arrest citizens over Skype, WhatsApp, or Google Meet video calls. "Digital arrest" is an entirely fabricated concept with zero legal existence in the Code of Criminal Procedure (CrPC / BNSS).</p>
+                    <p class="lesson-subtext">If any caller threatens arrest over video and demands financial transfers to "verify clean funds", disconnect immediately and dial the National Cyber Crime Helpline at <strong>1930</strong>.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Source Reference Footer -->
+              <div class="case-file-source-footer">
+                <div class="source-info">
+                  <span class="source-tag">OFFICIAL REPOSITORY // INVESTIGATIVE SOURCE</span>
+                  <span class="source-name">The Indian Express — "Digital Arrest: Bengaluru Techie Duped of ₹11 Crore in 11-Day Ordeal"</span>
+                </div>
+                <a href="https://indianexpress.com/article/cities/bangalore/digital-arrest-bengaluru-techie-scam-9789027/" target="_blank" rel="noopener noreferrer" class="read-report-btn">
+                  <span>Read Original Report</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ===================================================================
+               CASE 02: CHENNAI SENIOR CITIZEN DIGITAL ARREST (INDIA)
+               =================================================================== -->
+          <article class="case-file-card layout-reverse" data-country="india" data-category="financial-fraud">
+            <div class="case-file-visual-col">
+              <div class="case-file-badge-row">
+                <span class="case-file-num">CASE 02</span>
+                <span class="country-badge badge-india">
+                  <span class="flag-circle">🇮🇳</span> INDIA
+                </span>
+                <span class="crime-tag-badge">Financial Fraud</span>
+              </div>
+
+              <!-- Labeled Original SVG Illustration -->
+              <div class="case-file-illustration-wrap">
+                <span class="illustration-meta-label">Forensic Illustration // Mule Account Laundering Funnel</span>
+                <svg class="case-file-svg" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing senior citizen victim funds siphoned into layered mule accounts as investigated by the Enforcement Directorate">
+                  <!-- Victim Node -->
+                  <circle cx="65" cy="115" r="32" fill="#FFFCFA" stroke="#762F49" stroke-width="2"/>
+                  <circle cx="65" cy="105" r="12" fill="#E8D5D8"/>
+                  <path d="M48 132 C48 122 55 118 65 118 C75 118 82 122 82 132 Z" fill="#762F49"/>
+                  <text x="32" y="162" fill="#542033" font-size="8.5" font-family="'Inter', sans-serif" font-weight="bold">ELDERLY VICTIM</text>
+                  <text x="44" y="174" fill="#762F49" font-size="7.5" font-family="'JetBrains Mono', monospace">₹33 LAKH</text>
+
+                  <!-- Direct Transfer Flow Path -->
+                  <path d="M100 115 L145 115" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="4 3"/>
+                  <polygon points="145,111 153,115 145,119" fill="#C0392B"/>
+                  <text x="104" y="106" fill="#C0392B" font-size="7.5" font-weight="bold">EXTORTION</text>
+
+                  <!-- Mule Layer 1 (Aggregator Mule Account) -->
+                  <rect x="155" y="85" width="60" height="60" rx="6" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                  <rect x="165" y="97" width="40" height="6" rx="2" fill="#E8D5D8"/>
+                  <text x="162" y="120" fill="#FFFFFF" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="bold">PRIMARY</text>
+                  <text x="163" y="130" fill="#C49A83" font-size="7" font-family="'JetBrains Mono', monospace">MULE ACCT</text>
+
+                  <!-- Branching Flow into Shell Mules -->
+                  <path d="M217 100 L250 65" stroke="#762F49" stroke-width="2"/>
+                  <polygon points="252,62 245,67 248,72" fill="#762F49"/>
+
+                  <path d="M217 115 L250 115" stroke="#762F49" stroke-width="2"/>
+                  <polygon points="253,112 247,115 247,118" fill="#762F49"/>
+
+                  <path d="M217 130 L250 165" stroke="#762F49" stroke-width="2"/>
+                  <polygon points="252,168 248,158 245,163" fill="#762F49"/>
+
+                  <!-- Sub-Mule Layer 2 Accounts -->
+                  <g transform="translate(254, 45)">
+                    <rect x="0" y="0" width="70" height="34" rx="4" fill="#30242A" stroke="#E6D9D7" stroke-width="1"/>
+                    <text x="8" y="16" fill="#E8D5D8" font-size="7" font-weight="bold">MULE SUB 01</text>
+                    <text x="8" y="26" fill="#C49A83" font-size="6.5" font-family="'JetBrains Mono', monospace">CASH WITHDRAWAL</text>
+                  </g>
+
+                  <g transform="translate(254, 98)">
+                    <rect x="0" y="0" width="70" height="34" rx="4" fill="#30242A" stroke="#E6D9D7" stroke-width="1"/>
+                    <text x="8" y="16" fill="#E8D5D8" font-size="7" font-weight="bold">MULE SUB 02</text>
+                    <text x="8" y="26" fill="#C49A83" font-size="6.5" font-family="'JetBrains Mono', monospace">P2P CRYPTO SWAP</text>
+                  </g>
+
+                  <g transform="translate(254, 150)">
+                    <rect x="0" y="0" width="70" height="34" rx="4" fill="#30242A" stroke="#E6D9D7" stroke-width="1"/>
+                    <text x="8" y="16" fill="#E8D5D8" font-size="7" font-weight="bold">MULE SUB 03</text>
+                    <text x="8" y="26" fill="#C49A83" font-size="6.5" font-family="'JetBrains Mono', monospace">CROSS-BORDER EXPORT</text>
+                  </g>
+
+                  <!-- ED Enforcement Shield Stamp -->
+                  <g transform="translate(130, 182)">
+                    <rect x="0" y="0" width="168" height="24" rx="3" fill="#762F49" stroke="#C49A83" stroke-width="1"/>
+                    <text x="10" y="15" fill="#FFFFFF" font-size="8" font-weight="bold" font-family="'JetBrains Mono', monospace">ED PROBE: SYNDICATE ARRESTED</text>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Impact Statement Highlight Box -->
+              <div class="impact-metric-box">
+                <span class="impact-label">OFFICIAL ENFORCEMENT ACTION</span>
+                <span class="impact-figure">₹33 Lakh Siphoned &amp; Layered</span>
+                <span class="impact-period">Press Release Date: 27.01.2025 // Chennai, Tamil Nadu</span>
+              </div>
+            </div>
+
+            <div class="case-file-content-col">
+              <div class="case-file-header">
+                <span class="case-file-kicker">DOCS // 2025-IN-02</span>
+                <h3 class="case-file-title">Chennai Senior Citizen Extortion: Money Laundering Syndicate Arrests</h3>
+                <div class="case-file-dateline">
+                  <span><strong>Reported Date:</strong> January 2025</span>
+                  <span class="meta-separator">•</span>
+                  <span><strong>Investigating Agency:</strong> Directorate of Enforcement (ED)</span>
+                </div>
+              </div>
+
+              <div class="case-analysis-grid">
+                <!-- What Happened -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">1. What Happened?</h4>
+                  <p>In January 2025, the Enforcement Directorate (ED) formally issued a press release detailing enforcement operations and multiple arrests in connection with an organized digital arrest fraud that extracted ₹33 lakh from an elderly Chennai resident. Scammers contacted the senior citizen accusing them of involvement in serious cross-border financial offenses, forcing compliance under threats of immediate imprisonment.</p>
+                </div>
+
+                <!-- How Attack Worked -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">2. How Did the Attack Work?</h4>
+                  <p>The syndicates leveraged psychological isolation coupled with a sophisticated financial funnel:</p>
+                  <ul class="analysis-list">
+                    <li><strong>Elder Vulnerability Exploitation:</strong> Scammers targeted an elderly citizen who lived independently, capitalizing on lack of familiarity with modern digital policing norms and fear of societal dishonor.</li>
+                    <li><strong>Fabricated Federal Allegations:</strong> Victims were told their identity credentials had surfaced in serious anti-money laundering and terror financing registries.</li>
+                    <li><strong>Immediate Layering via Mule Accounts:</strong> As soon as the victim transferred the ₹33 lakh to "secure verification accounts", the syndicate moved the funds within minutes through a tiered network of domestic bank accounts (mule accounts) and converted portions into cryptocurrency to evade bank freezes.</li>
+                  </ul>
+                </div>
+
+                <!-- What Made It Serious -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">3. What Made the Incident Serious?</h4>
+                  <p>This case highlighted the direct nexus between digital arrest extortion and organized cross-border money laundering syndicates. It triggered formal prosecution under the Prevention of Money Laundering Act (PMLA), demonstrating that the actors behind digital arrests are rarely individual pranksters, but highly coordinated syndicates utilizing corporate-style mule account networks.</p>
+                </div>
+
+                <!-- Key Lessons -->
+                <div class="case-analysis-item lessons-card">
+                  <h4 class="analysis-heading lesson-title">💡 What Can Ordinary Internet Users Learn?</h4>
+                  <div class="lesson-callout-content">
+                    <p><strong>Protect Senior Family Members:</strong> Elderly citizens are prime targets for fear-driven extortion schemes. Families must proactively discuss digital fraud tactics, install caller verification tools, and establish a family consultation rule before executing any substantial bank transfer.</p>
+                    <p class="lesson-subtext">Never allow anyone claiming to be a police or customs official to order you into silence. Legitimate law-enforcement summons are delivered through signed physical notices, never secret phone threats.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Source Reference Footer -->
+              <div class="case-file-source-footer">
+                <div class="source-info">
+                  <span class="source-tag">OFFICIAL STATUTORY DOCUMENT // PRESS RELEASE</span>
+                  <span class="source-name">Directorate of Enforcement (ED), Govt. of India — "Press Release: Digital Arrest Scam Case (27.01.2025)"</span>
+                </div>
+                <a href="https://enforcementdirectorate.gov.in/sites/default/files/latestnews/Press%20Release-Digital%20Arrest%20Scam%20Case%20-%2027.01.2025%201.pdf" target="_blank" rel="noopener noreferrer" class="read-report-btn">
+                  <span>Read Original Report</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ===================================================================
+               CASE 03: RAJASTHAN DIGITAL ARREST FRAUD (INDIA)
+               =================================================================== -->
+          <article class="case-file-card" data-country="india" data-category="financial-fraud">
+            <div class="case-file-visual-col">
+              <div class="case-file-badge-row">
+                <span class="case-file-num">CASE 03</span>
+                <span class="country-badge badge-india">
+                  <span class="flag-circle">🇮🇳</span> INDIA
+                </span>
+                <span class="crime-tag-badge">Financial Fraud</span>
+              </div>
+
+              <!-- Labeled Original SVG Illustration -->
+              <div class="case-file-illustration-wrap">
+                <span class="illustration-meta-label">Forensic Illustration // 42-Transaction Relentless Extortion Spiral</span>
+                <svg class="case-file-svg" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration depicting 42 sequential coercive money transfers over a 3-month psychological hostage state before CBI intervention">
+                  <!-- Timeline Spine -->
+                  <line x1="45" y1="50" x2="45" y2="195" stroke="#762F49" stroke-width="3" stroke-linecap="round"/>
+                  
+                  <!-- Month 1 Node -->
+                  <circle cx="45" cy="65" r="8" fill="#542033" stroke="#C49A83" stroke-width="2"/>
+                  <rect x="65" y="52" width="240" height="28" rx="3" fill="#FFFCFA" stroke="#E6D9D7" stroke-width="1"/>
+                  <text x="75" y="66" fill="#542033" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold">MONTH 1 // FIRST 12 TRANSFERS</text>
+                  <text x="75" y="75" fill="#762F49" font-size="7">Initial panic: "Customs clearance fees & legal bail bonds"</text>
+
+                  <!-- Month 2 Node -->
+                  <circle cx="45" cy="115" r="8" fill="#542033" stroke="#C49A83" stroke-width="2"/>
+                  <rect x="65" y="102" width="240" height="28" rx="3" fill="#FFFCFA" stroke="#E6D9D7" stroke-width="1"/>
+                  <text x="75" y="116" fill="#542033" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold">MONTH 2 // 18 ESCALATING TRANSFERS</text>
+                  <text x="75" y="125" fill="#762F49" font-size="7">Secondary intimidation: "Confidentiality bond under official secrets act"</text>
+
+                  <!-- Month 3 Node -->
+                  <circle cx="45" cy="165" r="8" fill="#C0392B" stroke="#E8D5D8" stroke-width="2"/>
+                  <rect x="65" y="152" width="240" height="28" rx="3" fill="#FFFCFA" stroke="#E6D9D7" stroke-width="1"/>
+                  <text x="75" y="166" fill="#C0392B" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold">MONTH 3 // FINAL 12 TRANSFERS (TOTAL 42)</text>
+                  <text x="75" y="175" fill="#762F49" font-size="7">Total savings drained: ₹7.67 Crore liquidated across 42 bank transfers</text>
+
+                  <!-- CBI Operation Chakra Banner -->
+                  <g transform="translate(45, 198)">
+                    <rect x="0" y="0" width="260" height="26" rx="4" fill="#542033" stroke="#C49A83" stroke-width="1"/>
+                    <text x="14" y="17" fill="#FFFFFF" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold">CBI OPERATION CHAKRA // KINGPINS APPREHENDED</text>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Impact Statement Highlight Box -->
+              <div class="impact-metric-box">
+                <span class="impact-label">SYSTEMIC PSYCHOLOGICAL DOMINATION</span>
+                <span class="impact-figure">₹7.67 Crore Extorted 42 Times</span>
+                <span class="impact-period">Reporting Period: April 2025 // Rajasthan / CBI Operation Chakra</span>
+              </div>
+            </div>
+
+            <div class="case-file-content-col">
+              <div class="case-file-header">
+                <span class="case-file-kicker">DOCS // 2025-IN-03</span>
+                <h3 class="case-file-title">Rajasthan Digital Arrest: 3 Months of Intimidation and 42 Extortion Demands</h3>
+                <div class="case-file-dateline">
+                  <span><strong>Reported Date:</strong> April 2025</span>
+                  <span class="meta-separator">•</span>
+                  <span><strong>Law Enforcement Agency:</strong> Central Bureau of Investigation (CBI)</span>
+                </div>
+              </div>
+
+              <div class="case-analysis-grid">
+                <!-- What Happened -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">1. What Happened?</h4>
+                  <p>In a prolonged case broken by national media in April 2025, a victim in Rajasthan was subjected to relentless digital arrest intimidation spanning three straight months. Fraudsters posing as federal agents manipulated the victim into making <strong>42 distinct financial transactions</strong>, gradually siphoning an astronomical total of <strong>₹7.67 crore</strong> before the victim finally broke isolation and sought help.</p>
+                </div>
+
+                <!-- How Attack Worked -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">2. How Did the Attack Work?</h4>
+                  <p>The attackers maintained prolonged psychological dominance through iterative micro-extortions:</p>
+                  <ul class="analysis-list">
+                    <li><strong>Sunk Cost Entrapment:</strong> After extracting the first few lakhs, scammers promised each subsequent transfer was the "final clearance fee" needed to close the investigation and refund all previously deposited funds.</li>
+                    <li><strong>Threat of Imprisonment for Non-Compliance:</strong> Whenever the victim hesitated, scammers staged sudden aggressive video alerts showing sirens, fake arrest teams, and court orders citing the Official Secrets Act.</li>
+                    <li><strong>Multi-City Kingpin Operations:</strong> Investigations revealed an organized network spanning Mumbai, Moradabad, and Rajasthan, coordinating live bank cash-outs and crypto conversions across borders.</li>
+                  </ul>
+                </div>
+
+                <!-- What Made It Serious -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">3. What Made the Incident Serious?</h4>
+                  <p>This case exposed the devastating power of prolonged psychological conditioning. Cybercriminals do not simply steal money and disappear; in high-value cases, they maintain parasitic control over their victims for months. The incident prompted major interventions under <strong>CBI Operation Chakra</strong>, targeting interstate kingpins and dismantle organized digital arrest hubs.</p>
+                </div>
+
+                <!-- Key Lessons -->
+                <div class="case-analysis-item lessons-card">
+                  <h4 class="analysis-heading lesson-title">💡 What Can Ordinary Internet Users Learn?</h4>
+                  <div class="lesson-callout-content">
+                    <p><strong>The Golden First-Hour Rule (The Golden Hour):</strong> Once you transfer money under coercion, every delay makes recovery significantly harder. Scammers never return "security deposits". The moment an official demands money to dismiss charges, recognize it as extortion.</p>
+                    <p class="lesson-subtext">Immediate reporting within the first 2–4 hours to <strong>1930</strong> allows the Indian Cyber Crime Coordination Centre (I4C) to trigger banking API freezes and stop funds in intermediary mule accounts.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Source Reference Footer -->
+              <div class="case-file-source-footer">
+                <div class="source-info">
+                  <span class="source-tag">NATIONAL INVESTIGATIVE REPORTING</span>
+                  <span class="source-name">India Today — "CBI Digital Arrest Operation Chakra: Kingpin Arrested in Moradabad & Mumbai"</span>
+                </div>
+                <a href="https://www.indiatoday.in/india/story/cbi-digital-arrest-operation-chakra-kingpin-mumbai-moradabad-cybercrime-2709292-2025-04-15" target="_blank" rel="noopener noreferrer" class="read-report-btn">
+                  <span>Read Original Report</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ===================================================================
+               CASE 04: BYBIT CRYPTOCURRENCY THEFT (INTERNATIONAL)
+               =================================================================== -->
+          <article class="case-file-card layout-reverse" data-country="international" data-category="crypto">
+            <div class="case-file-visual-col">
+              <div class="case-file-badge-row">
+                <span class="case-file-num">CASE 04</span>
+                <span class="country-badge badge-intl">
+                  <span class="flag-circle">🌐</span> INTERNATIONAL
+                </span>
+                <span class="crime-tag-badge">Cryptocurrency Theft</span>
+              </div>
+
+              <!-- Labeled Original SVG Illustration -->
+              <div class="case-file-illustration-wrap">
+                <span class="illustration-meta-label">Forensic Illustration // Cold Wallet Key Injection & Exfiltration</span>
+                <svg class="case-file-svg" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration depicting the breach of an exchange digital asset wallet and unauthorized draining of Ethereum reserves">
+                  <!-- Central Vault / Cold Wallet Box -->
+                  <rect x="95" y="40" width="150" height="110" rx="8" fill="#241B20" stroke="#762F49" stroke-width="2"/>
+                  <!-- Digital Safe Dial -->
+                  <circle cx="170" cy="85" r="26" fill="#30242A" stroke="#C49A83" stroke-width="2"/>
+                  <circle cx="170" cy="85" r="16" fill="#542033"/>
+                  <!-- Ethereum Diamond Symbol -->
+                  <polygon points="170,74 179,85 170,89 161,85" fill="#E8D5D8"/>
+                  <polygon points="170,90 179,86 170,98 161,86" fill="#C49A83"/>
+
+                  <!-- Vault Tamper Breach Alert -->
+                  <rect x="110" y="122" width="120" height="18" rx="3" fill="#C0392B"/>
+                  <text x="118" y="134" fill="#FFFFFF" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="bold">UNAUTHORIZED KEY SIGN</text>
+
+                  <!-- Siphoned Drainage Flow Lines -->
+                  <path d="M245 95 C280 95, 290 130, 290 160" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="5 3"/>
+                  <polygon points="290,165 285,155 295,155" fill="#C0392B"/>
+
+                  <!-- Attacker Mixer / Sybil Nodes -->
+                  <g transform="translate(230, 170)">
+                    <rect x="0" y="0" width="95" height="36" rx="4" fill="#30242A" stroke="#762F49" stroke-width="1.5"/>
+                    <text x="8" y="15" fill="#E8D5D8" font-size="7" font-weight="bold">CRYPTO MIXER POOL</text>
+                    <text x="8" y="27" fill="#C49A83" font-size="7" font-family="'JetBrains Mono', monospace">TORNADO / SWAPS</text>
+                  </g>
+
+                  <!-- Left: Impact Callout Label -->
+                  <g transform="translate(18, 170)">
+                    <rect x="0" y="0" width="180" height="36" rx="4" fill="#542033" stroke="#C49A83" stroke-width="1"/>
+                    <text x="10" y="16" fill="#FFFFFF" font-size="8.5" font-weight="bold">HISTORIC $1.5 BILLION THEFT</text>
+                    <text x="10" y="27" fill="#E8D5D8" font-size="7" font-family="'JetBrains Mono', monospace">~400,000 ETH SIPHONED</text>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Impact Statement Highlight Box -->
+              <div class="impact-metric-box">
+                <span class="impact-label">RECORD BREAKING CRYPTO THEFT</span>
+                <span class="impact-figure">~$1.5 Billion USD in ETH</span>
+                <span class="impact-period">Incident Date: February 2025 // Global Digital Asset Market</span>
+              </div>
+            </div>
+
+            <div class="case-file-content-col">
+              <div class="case-file-header">
+                <span class="case-file-kicker">DOCS // 2025-INTL-01</span>
+                <h3 class="case-file-title">Bybit Cryptocurrency Theft: The Largest Digital Asset Heist in History</h3>
+                <div class="case-file-dateline">
+                  <span><strong>Reported Date:</strong> February 2025</span>
+                  <span class="meta-separator">•</span>
+                  <span><strong>Industry Sector:</strong> Global Digital Asset Exchange / Web3 Infrastructure</span>
+                </div>
+              </div>
+
+              <div class="case-analysis-grid">
+                <!-- What Happened -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">1. What Happened?</h4>
+                  <p>In February 2025, cryptocurrency exchange Bybit suffered what is documented as the largest single cryptocurrency theft in history. Advanced threat actors penetrated internal key infrastructure and unauthorizedly transferred approximately <strong>$1.5 billion worth of Ethereum (ETH)</strong> out of the exchange's cold wallet architecture into hostile decentralized wallets.</p>
+                </div>
+
+                <!-- How Attack Worked -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">2. How Did the Attack Work?</h4>
+                  <p>Security researchers and international cyber defense agencies documented the mechanism:</p>
+                  <ul class="analysis-list">
+                    <li><strong>Compromise of Multi-Signature Infrastructure:</strong> Rather than attacking the underlying blockchain code, adversaries targeted off-chain administrative authentication and developer access mechanisms.</li>
+                    <li><strong>Rapid Obfuscation via Decentralized Protocols:</strong> The stolen digital assets were immediately fragmented across hundreds of intermediate wallets, smart contract mixers, and cross-chain bridges to prevent centralised blacklisting.</li>
+                    <li><strong>State-Sponsored APT Techniques:</strong> Analytical indicators observed by the Center for Strategic and International Studies (CSIS) align with methodologies deployed by well-resourced state-backed cyber syndicates.</li>
+                  </ul>
+                </div>
+
+                <!-- What Made It Serious -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">3. What Made the Incident Serious?</h4>
+                  <p>The Bybit heist surpassed previous record heists (including Ronin and Mt. Gox) in sheer dollar value. It revealed that even institutional digital asset custodians with multi-layered governance procedures remain vulnerable to credential theft, supply-chain infiltration, and multi-sig authorization exploitation.</p>
+                </div>
+
+                <!-- Key Lessons -->
+                <div class="case-analysis-item lessons-card">
+                  <h4 class="analysis-heading lesson-title">💡 What Can Ordinary Internet Users Learn?</h4>
+                  <div class="lesson-callout-content">
+                    <p><strong>"Not Your Keys, Not Your Coins":</strong> Centralized cryptocurrency exchanges are custodial targets. Holding high-value personal crypto assets on an exchange exposes you to counterparty insolvency or exchange-level intrusion.</p>
+                    <p class="lesson-subtext">Ordinary investors should utilize personal self-custody hardware cold wallets (e.g. Ledger, Trezor), enforce hardware security key 2FA (YubiKey), and never store secret seed phrases digitally on cloud notes or desktop drives.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Source Reference Footer -->
+              <div class="case-file-source-footer">
+                <div class="source-info">
+                  <span class="source-tag">STRATEGIC CYBERSECURITY INTELLIGENCE REPOSITORY</span>
+                  <span class="source-name">Center for Strategic and International Studies (CSIS) — "Significant Cyber Incidents Archive"</span>
+                </div>
+                <a href="https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents" target="_blank" rel="noopener noreferrer" class="read-report-btn">
+                  <span>Read Original Report</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ===================================================================
+               CASE 05: CHANGE HEALTHCARE RANSOMWARE ATTACK (INTERNATIONAL)
+               =================================================================== -->
+          <article class="case-file-card" data-country="international" data-category="ransomware">
+            <div class="case-file-visual-col">
+              <div class="case-file-badge-row">
+                <span class="case-file-num">CASE 05</span>
+                <span class="country-badge badge-intl">
+                  <span class="flag-circle">🌐</span> INTERNATIONAL
+                </span>
+                <span class="crime-tag-badge">Ransomware</span>
+              </div>
+
+              <!-- Labeled Original SVG Illustration -->
+              <div class="case-file-illustration-wrap">
+                <span class="illustration-meta-label">Forensic Illustration // Healthcare Infrastructure Extortion &amp; Disruption</span>
+                <svg class="case-file-svg" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration depicting healthcare clinical infrastructure halted by blackcat ransomware encryption with 190 million patients impacted">
+                  <!-- Hospital/Healthcare Cross Center -->
+                  <rect x="40" y="35" width="260" height="145" rx="6" fill="#241B20" stroke="#762F49" stroke-width="2"/>
+                  <!-- Hospital Cross Motif -->
+                  <rect x="80" y="65" width="20" height="50" rx="3" fill="#E8D5D8" opacity="0.3"/>
+                  <rect x="65" y="80" width="50" height="20" rx="3" fill="#E8D5D8" opacity="0.3"/>
+
+                  <!-- Ransomware Lockout Window -->
+                  <rect x="130" y="50" width="155" height="115" rx="4" fill="#30242A" stroke="#C0392B" stroke-width="2"/>
+                  <rect x="130" y="50" width="155" height="22" rx="3" fill="#C0392B"/>
+                  <text x="138" y="65" fill="#FFFFFF" font-size="8" font-family="'JetBrains Mono', monospace" font-weight="bold">SYSTEM HALTED: ENCRYPTED</text>
+                  
+                  <!-- Padlock Graphic -->
+                  <circle cx="207" cy="98" r="14" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                  <rect x="199" y="96" width="16" height="14" rx="2" fill="#C49A83"/>
+                  <path d="M203 96 V91 C203 87 211 87 211 91 V96" stroke="#C49A83" stroke-width="2" fill="none"/>
+                  
+                  <text x="142" y="125" fill="#E8D5D8" font-size="7.5" font-family="'JetBrains Mono', monospace">NO MFA ON CITRIX PORTAL</text>
+                  <text x="142" y="137" fill="#C0392B" font-size="7.5" font-family="'JetBrains Mono', monospace" font-weight="bold">ALPHV / BLACKCAT RANSOM</text>
+                  <rect x="142" y="145" width="130" height="12" rx="2" fill="#542033"/>
+                  <text x="146" y="154" fill="#FFFFFF" font-size="7" font-weight="bold">PRESCRIPTION CLEARING FROZEN</text>
+
+                  <!-- Impact Banner Over Base -->
+                  <g transform="translate(30, 190)">
+                    <rect x="0" y="0" width="280" height="32" rx="4" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                    <text x="12" y="15" fill="#FFFFFF" font-size="9" font-weight="bold">~190 MILLION PATIENT RECORDS COMPROMISED</text>
+                    <text x="12" y="25" fill="#C49A83" font-size="7" font-family="'JetBrains Mono', monospace">NATIONWIDE PHARMACY CLAIMS PARALYZED</text>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Impact Statement Highlight Box -->
+              <div class="impact-metric-box">
+                <span class="impact-label">CRITICAL INFRASTRUCTURE PARALYSIS</span>
+                <span class="impact-figure">~190 Million Individuals Affected</span>
+                <span class="impact-period">Incident: Feb 2024 / 2025 Comprehensive Review // United States</span>
+              </div>
+            </div>
+
+            <div class="case-file-content-col">
+              <div class="case-file-header">
+                <span class="case-file-kicker">DOCS // 2025-INTL-02</span>
+                <h3 class="case-file-title">Change Healthcare Ransomware: The Paralysis of National Medical Infrastructure</h3>
+                <div class="case-file-dateline">
+                  <span><strong>Reported Period:</strong> February 2024 / Comprehensive 2025 Audit</span>
+                  <span class="meta-separator">•</span>
+                  <span><strong>Threat Actor Group:</strong> ALPHV / BlackCat Ransomware Syndicate</span>
+                </div>
+              </div>
+
+              <div class="case-analysis-grid">
+                <!-- What Happened -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">1. What Happened?</h4>
+                  <p>In February 2024, Change Healthcare (a division of UnitedHealth Group processing over 15 billion healthcare billing transactions annually) was brought down by the ALPHV/BlackCat ransomware gang. The attack paralyzed electronic prescription processing across thousands of US pharmacies and exposed sensitive medical records of an estimated <strong>190 million individuals</strong>—representing one of the most disruptive critical infrastructure attacks in history.</p>
+                </div>
+
+                <!-- How Attack Worked -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">2. How Did the Attack Work?</h4>
+                  <p>Forensic audits confirmed an astonishingly simple point of failure:</p>
+                  <ul class="analysis-list">
+                    <li><strong>Lack of Multi-Factor Authentication (MFA):</strong> Attackers used stolen credentials to remotely log into a critical Citrix gateway portal that did not have Multi-Factor Authentication enabled.</li>
+                    <li><strong>Double Extortion Deployment:</strong> Intruders spent days exfiltrating sensitive patient records and medical histories before deploying file encryption malware to lock down primary and backup transaction processing databases.</li>
+                    <li><strong>Ransom Payment & Re-Extortion:</strong> Despite a reported payment of approximately $22 million in Bitcoin, systemic recovery took months, costing billions in operational remediation.</li>
+                  </ul>
+                </div>
+
+                <!-- What Made It Serious -->
+                <div class="case-analysis-item">
+                  <h4 class="analysis-heading">3. What Made the Incident Serious?</h4>
+                  <p>This incident proved that cybersecurity is a matter of life and safety, not just IT finance. Patients could not obtain life-saving insulin or cancer medications at pharmacies because real-time insurance clearing was offline. Small medical practices faced immediate cash-flow collapse when claim processing stalled for weeks.</p>
+                </div>
+
+                <!-- Key Lessons -->
+                <div class="case-analysis-item lessons-card">
+                  <h4 class="analysis-heading lesson-title">💡 What Can Ordinary Internet Users Learn?</h4>
+                  <div class="lesson-callout-content">
+                    <p><strong>Universal Rule: Never Skip Multi-Factor Authentication (MFA):</strong> A multibillion-dollar healthcare backbone was breached through a single remote portal lacking 2FA. For personal accounts, always activate Multi-Factor Authentication—preferably using authenticator apps or hardware security keys rather than SMS OTPs.</p>
+                    <p class="lesson-subtext">Maintain offline copies of essential personal health records and maintain emergency financial cushions for occasions when electronic payment rails experience unexpected downtime.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Source Reference Footer -->
+              <div class="case-file-source-footer">
+                <div class="source-info">
+                  <span class="source-tag">GLOBAL CYBER RISK BENCHMARK AUDIT</span>
+                  <span class="source-name">MinterEllison Perspectives on Cyber Risk Report 2025 (10th Anniversary Edition)</span>
+                </div>
+                <a href="https://www.minterellison.com/-/media/Minter-Ellison/Line-of-Business/DCI/Cyber-Reports/2025/MinterEllison-Perspectives-on-Cyber-Risk-Report-2025-10th-Anniversary-Edition.pdf" target="_blank" rel="noopener noreferrer" class="read-report-btn">
+                  <span>Read Original Report</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.case-files-list -->
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: THE SCAM ANATOMY: STEP-BY-STEP KILLCHAIN
+         (Interactive Magazine Diagram)
+         ========================================================================= -->
+    <section class="section" id="killchain">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">03 //</span>
+            <span>BEHAVIORAL SEQUENCE</span>
+          </div>
+          <h2 class="section-title">The scam anatomy: Step-by-step killchain.</h2>
+          <p class="section-subtitle">
+            Almost every cyber fraud follows this predictable 5-stage progression. Click each stage below to examine how attackers guide their targets toward unauthorized transactions.
+          </p>
+        </header>
+
+        <div class="killchain-sequence" role="tablist">
+          <!-- Step 1 -->
+          <div class="killchain-step active" data-stage="trust" tabindex="0" role="tab" aria-selected="true">
+            <div class="killchain-step-top">
+              <span class="killchain-number">01</span>
+              <span class="killchain-badge">STAGE I</span>
+            </div>
+            <div class="killchain-title">Trust</div>
+            <div class="killchain-desc">False legitimacy via spoofed identities, fake IDs, or uniforms.</div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="killchain-step" data-stage="urgency" tabindex="0" role="tab" aria-selected="false">
+            <div class="killchain-step-top">
+              <span class="killchain-number">02</span>
+              <span class="killchain-badge">STAGE II</span>
+            </div>
+            <div class="killchain-title">Urgency</div>
+            <div class="killchain-desc">Manufactured panic: impending arrest, disconnection, or fees.</div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="killchain-step" data-stage="manipulation" tabindex="0" role="tab" aria-selected="false">
+            <div class="killchain-step-top">
+              <span class="killchain-number">03</span>
+              <span class="killchain-badge">STAGE III</span>
+            </div>
+            <div class="killchain-title">Isolation</div>
+            <div class="killchain-desc">Enforced secrecy preventing consultation with family or banks.</div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="killchain-step" data-stage="theft" tabindex="0" role="tab" aria-selected="false">
+            <div class="killchain-step-top">
+              <span class="killchain-number">04</span>
+              <span class="killchain-badge">STAGE IV</span>
+            </div>
+            <div class="killchain-title">Theft</div>
+            <div class="killchain-desc">QR scan, OTP forward, or remote access installation requested.</div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="killchain-step" data-stage="loss" tabindex="0" role="tab" aria-selected="false">
+            <div class="killchain-step-top">
+              <span class="killchain-number">05</span>
+              <span class="killchain-badge">STAGE V</span>
+            </div>
+            <div class="killchain-title">Loss</div>
+            <div class="killchain-desc">Rapid fund transfer into mule network; scammer disconnects.</div>
+          </div>
+        </div>
+
+        <!-- Dynamic Explanatory Box -->
+        <div class="killchain-focus-box" id="killchainFocusBox">
+          <h4 id="killchainFocusTitle">Stage 1: Establishing False Trust</h4>
+          <p id="killchainFocusBody">
+            Scammers begin by manufacturing an appearance of legitimacy. They pose as bank officers, courier tracking agents (India Post/BlueDart), electricity officials, or even police personnel in uniform over video. They use forged ID cards, official logos, and caller ID spoofing to drop your psychological guard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: TEST YOUR CYBER AWARENESS (MAGAZINE CITIZEN AUDIT)
+         ========================================================================= -->
+    <section class="section" id="quiz">
+      <div class="container">
+        <header class="section-header" style="text-align: center; margin-left: auto; margin-right: auto;">
+          <div class="section-eyebrow">
+            <span class="section-number">04 //</span>
+            <span>MAGAZINE AUDIT</span>
+          </div>
+          <h2 class="section-title">Test your cyber readiness.</h2>
+          <p class="section-subtitle">
+            Answer these 5 critical situational questions to evaluate your vulnerability to common online threats.
+          </p>
+        </header>
+
+        <div class="quiz-wrapper">
+          <form id="cyberQuizForm" action="#" onsubmit="return false;">
+            
+            <!-- Question 1 -->
+            <div class="quiz-question-card">
+              <div class="question-prompt">
+                <span class="question-num">Q1</span>
+                <span>An online buyer on OLX sends you a QR code claiming: <em>"Scan this QR code to receive your advance payment."</em> Should you scan it?</span>
+              </div>
+              <div class="quiz-options-group">
+                <label class="quiz-option-label">
+                  <input type="radio" name="q1" value="yes" required>
+                  <span>Yes, scanning will confirm payment reception into my bank account.</span>
+                </label>
+                <label class="quiz-option-label">
+                  <input type="radio" name="q1" value="no">
+                  <span>No, scanning a QR code or entering a PIN only deducts funds from my account.</span>
+                </label>
+              </div>
+              <div class="quiz-explanation-box" id="q1-explanation"></div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-question-card">
+              <div class="question-prompt">
+                <span class="question-num">Q2</span>
+                <span>A caller in a police uniform on Skype video call claims you are under "Digital Arrest" and must transfer money to an escrow account for verification. Is this legitimate?</span>
+              </div>
+              <div class="quiz-options-group">
+                <label class="quiz-option-label">
+                  <input type="radio" name="q2" value="yes" required>
+                  <span>Yes, law enforcement agencies conduct trials and hold funds over video calls.</span>
+                </label>
+                <label class="quiz-option-label">
+                  <input type="radio" name="q2" value="no">
+                  <span>No, "Digital Arrest" does not exist under Indian law, and police never ask for money transfers.</span>
+                </label>
+              </div>
+              <div class="quiz-explanation-box" id="q2-explanation"></div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-question-card">
+              <div class="question-prompt">
+                <span class="question-num">Q3</span>
+                <span>An SMS arrives stating your bank KYC is pending. A caller claims to be customer support and asks you to share the 6-digit OTP just sent to your phone. Should you share it?</span>
+              </div>
+              <div class="quiz-options-group">
+                <label class="quiz-option-label">
+                  <input type="radio" name="q3" value="share" required>
+                  <span>Yes, customer support needs OTPs to complete verification.</span>
+                </label>
+                <label class="quiz-option-label">
+                  <input type="radio" name="q3" value="never">
+                  <span>Never. Banks and authorized customer care agents will never ask for an OTP.</span>
+                </label>
+              </div>
+              <div class="quiz-explanation-box" id="q3-explanation"></div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-question-card">
+              <div class="question-prompt">
+                <span class="question-num">Q4</span>
+                <span>You are invited to a Telegram group promising "guaranteed 50% weekly returns" on stock trading with no risk. Is this a warning sign of fraud?</span>
+              </div>
+              <div class="quiz-options-group">
+                <label class="quiz-option-label">
+                  <input type="radio" name="q4" value="yes" required>
+                  <span>Yes, guaranteed high returns without market risk are a hallmark of investment scams.</span>
+                </label>
+                <label class="quiz-option-label">
+                  <input type="radio" name="q4" value="no">
+                  <span>No, private algorithmic trading firms routinely guarantee risk-free returns.</span>
+                </label>
+              </div>
+              <div class="quiz-explanation-box" id="q4-explanation"></div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-question-card">
+              <div class="question-prompt">
+                <span class="question-num">Q5</span>
+                <span>A courier delivery executive calls saying your parcel is held and asks you to install AnyDesk or TeamViewer to pay a ₹5 re-delivery fee. Should you install it?</span>
+              </div>
+              <div class="quiz-options-group">
+                <label class="quiz-option-label">
+                  <input type="radio" name="q5" value="yes" required>
+                  <span>Yes, remote access software is required to assist customers with payment links.</span>
+                </label>
+                <label class="quiz-option-label">
+                  <input type="radio" name="q5" value="no">
+                  <span>No, installing remote access apps grants scammers full view and control of your screen and passwords.</span>
+                </label>
+              </div>
+              <div class="quiz-explanation-box" id="q5-explanation"></div>
+            </div>
+
+            <!-- Quiz Actions & Score -->
+            <div class="quiz-actions">
+              <span id="quizScoreDisplay" class="quiz-score-pill" style="display: none;">Score: 0 / 5</span>
+              <button type="submit" id="quizSubmitBtn" class="btn btn-primary">Submit &amp; View Explanations</button>
+              <button type="button" id="quizResetBtn" class="btn btn-outline" style="display: none;">Retake Quiz</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: EMERGENCY ACTION (DEEP BURGUNDY EDITORIAL SECTION)
+         ========================================================================= -->
+    <section class="emergency-burgundy-section" id="emergency">
+      <div class="container emergency-burgundy-grid">
+        <div class="emergency-burgundy-content">
+          <h2>Already been scammed?</h2>
+          <p>
+            Do not let embarrassment or panic cause delays. Immediate action within the first 120 minutes gives investigating agencies the highest chance of freezing fraudulent accounts before funds leave the banking system.
+          </p>
+
+          <div class="emergency-checklist-pills">
+            <div class="emergency-pill-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Call 1930 immediately:</strong> Report transaction details to the National Financial Fraud Helpline.</span>
+            </div>
+            <div class="emergency-pill-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Contact your bank:</strong> Immediately freeze compromised debit cards, net banking, and UPI services.</span>
+            </div>
+            <div class="emergency-pill-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Lodge formal FIR:</strong> Submit your narrative on the statutory portal <code>cybercrime.gov.in</code>.</span>
+            </div>
+            <div class="emergency-pill-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Preserve evidence:</strong> Save uncropped chat screenshots, SMS headers, and UTR transaction records.</span>
+            </div>
+          </div>
+
+          <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="background-color: #FFFFFF; color: var(--wine-primary); border-color: #FFFFFF;">
+            Lodge Complaint on cybercrime.gov.in
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="emergency-call-card">
+          <h3>National Financial Fraud Helpline</h3>
+          <span class="helpline-number">1930</span>
+          <p>Toll-free 24x7 service operated by the Ministry of Home Affairs (I4C) for real-time inter-bank lien holds.</p>
+          <a href="tel:1930" class="btn btn-primary" style="width: 100%;">
+            Dial 1930 Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: OFFICIAL STATUTORY LEARNING RESOURCES
+         ========================================================================= -->
+    <section class="section" id="resources">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-eyebrow">
+            <span class="section-number">05 //</span>
+            <span>VERIFIED STATUTORY DIRECTORY</span>
+          </div>
+          <h2 class="section-title">Official statutory learning portals.</h2>
+          <p class="section-subtitle">
+            Consult official Government of India repositories for verified advisories, telecom safety tools, and security alerts.
+          </p>
+        </header>
+
+        <div class="resources-grid">
+          <!-- Resource 1 -->
+          <div class="resource-card">
+            <span class="resource-badge primary">MHA INITIATIVE</span>
+            <h3>cybercrime.gov.in</h3>
+            <p>The Ministry of Home Affairs central reporting platform for all financial and social media cyber offenses. Access citizen advisories and complaint status tracking.</p>
+            <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              Visit Cyber Crime Portal 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Resource 2 -->
+          <div class="resource-card">
+            <span class="resource-badge">DOT INITIATIVE</span>
+            <h3>sancharsaathi.gov.in</h3>
+            <p>Department of Telecommunications platform to track stolen phones (CEIR), report suspected fraud communications (Chakshu), and check registered SIM connections (TAFCOP).</p>
+            <a href="https://sancharsaathi.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              Visit Sanchar Saathi 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Resource 3 -->
+          <div class="resource-card">
+            <span class="resource-badge primary">NATIONAL CERT</span>
+            <h3>cert-in.org.in</h3>
+            <p>The Indian Computer Emergency Response Team under MeitY. Publishes official security advisories, vulnerability alerts, and incident handling guidelines.</p>
+            <a href="https://www.cert-in.org.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              Visit CERT-In Alerts 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Resource 4 -->
+          <div class="resource-card">
+            <span class="resource-badge">RESERVE BANK</span>
+            <h3>RBI Kehta Hai</h3>
+            <p>Reserve Bank of India public financial awareness initiative providing official guidelines regarding consumer liability, unauthorized debits, and banking precautions.</p>
+            <a href="https://rbikehtahai.rbi.org.in/" target="_blank" rel="noopener noreferrer" class="resource-link">
+              Visit RBI Kehta Hai 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-insignia" aria-hidden="true">
+              <svg class="logo-shield-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 3 L37 8 V19 C37 28.5 22 39 22 39 C22 39 7 28.5 7 19 V8 L22 3 Z" fill="#542033" stroke="#C49A83" stroke-width="1.5"/>
+                <path d="M22 9 V18" stroke="#E8D5D8" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 15 H22 H29" stroke="#E8D5D8" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="15" cy="15" r="2" fill="#C49A83"/>
+                <circle cx="29" cy="15" r="2" fill="#C49A83"/>
+                <path d="M18 24 L22 21 L26 24 V29 L22 32 L18 29 Z" fill="#C49A83" stroke="#FFFFFF" stroke-width="0.8"/>
+                <circle cx="22" cy="26.5" r="1.5" fill="#542033"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">CYBER SENTINELS</span>
+              <span class="brand-tagline">Civic Public Awareness</span>
+            </div>
+          </div>
+          <p class="footer-mission">
+            Empowering citizens with actionable awareness, clear procedural frameworks, and practical defense against evolving cyber threats.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#threats">Threats Overview</a></li>
+            <li><a href="awareness.html">Online Awareness</a></li>
+            <li><a href="index.html#assistant">Safety Assistant</a></li>
+            <li><a href="index.html#complaint">Draft Complaint</a></li>
+            <li><a href="index.html#checklist">Evidence Checklist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul class="footer-links">
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">Cyber Crime Portal</a></li>
+            <li><a href="https://sancharsaathi.gov.in" target="_blank" rel="noopener noreferrer">Sanchar Saathi</a></li>
+            <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer">Reserve Bank of India</a></li>
+            <li><a href="https://cert-in.org.in" target="_blank" rel="noopener noreferrer">CERT-In Security Alerts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <div class="footer-contact-item">
+            <strong>Financial Fraud Helpline:</strong><br>
+            <a href="tel:1930" style="color: #FFFFFF; text-decoration: underline;">Dial 1930</a> (Available 24x7)
+          </div>
+          <div class="footer-contact-item">
+            <strong>National Emergency:</strong><br>
+            Dial 112
+          </div>
+          <div class="footer-contact-item">
+            <strong>Women Helpline:</strong><br>
+            Dial 1091 / 181
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          <strong>Civic Disclaimer:</strong> Cyber Sentinels is an independent public educational and awareness initiative. This website is not affiliated with, endorsed by, or operated by any government ministry, police department, or legal enforcement body. For official complaint lodgement, please visit <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; text-decoration: underline;">cybercrime.gov.in</a>.
+        </p>
+        <div class="footer-copyright">
+          &copy; Cyber Sentinels. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Logic -->
+  <script src="js/awareness.js"></script>
+</body>
+</html>
